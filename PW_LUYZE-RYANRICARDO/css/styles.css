@@ -1,3 +1,143 @@
+.container-header {
+  margin-top: 0.5rem;
+}
+
+.container-header img {
+  width: 27rem;
+  height: fit-content;
+  margin-top: 0;
+  margin-left: 9rem;
+}
+
+section {
+  margin-top: 2rem;
+  width: 30rem;
+}
+
+#form-busca {
+  display: flex;
+}
+
+.container-header input {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  width: 14rem;
+  height: 2rem;
+  border: 1px solid #ced4da;
+}
+
+.container-header button {
+  width: 2rem;
+  height: 2rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  color: #fff;
+  background-color: #312783;
+  border-color: #312783;
+}
+
+/*cabeçalhoazul*/
+
+#menu-pages {
+  background-color: #312783;
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+
+#menu-pages nav {
+  margin-left: 9rem;
+}
+
+#menu-pages a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+#menu-pages li {
+  padding-right: 35px;
+  align-items: center;
+}
+
+/*cabecalho fim*/
+
+footer {
+  background-color: #312783;
+}
+
+.container-footer {
+  width: 80rem;
+  height: 13rem;
+  border-top: 0.2rem solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-img h1 {
+  background-color: #c4302b;
+  height: fit-content;
+  width: 16rem;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#footer_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#footer_social_media .footer-link {
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#youtube {
+  background-color: #c4302b;
+}
+
+#twitter {
+  background-color: #00acee;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+.footer-location {
+  float: right;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+=======
 footer {
     background-color: #312783;
 }
