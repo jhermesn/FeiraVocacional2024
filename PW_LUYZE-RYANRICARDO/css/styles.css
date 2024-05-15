@@ -2,6 +2,11 @@
   margin-top: 0.5rem;
 }
 
+main {
+  height: 30rem; /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
+  background-color: grey;
+}
+
 .container-header img {
   width: 27rem;
   height: fit-content;
@@ -72,13 +77,13 @@ footer {
 }
 
 .container-footer {
-  width: 80rem;
-  height: 13rem;
+  width: 92rem;
+  height: 16rem;
   border-top: 0.2rem solid red;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  gap: 16rem;
+  gap: 20rem;
 }
 
 .footer-img h1 {
@@ -93,8 +98,6 @@ footer {
 
 #footer_social_media {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -112,7 +115,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
 }
 
 #footer_social_media .footer-link:hover {
@@ -135,9 +137,23 @@ footer {
   background-color: #4267b3;
 }
 
-.footer-location {
+.footer-location iframe {
+  width: 18.5rem;
+  height: 12.5rem;
   float: right;
-  margin-right: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+}
+
+.footer-location a {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #f2f2d0;
+  font-family: sans-serif;
+  font-size: 0.96rem;
+}
+
+.footer-location i {
+  position: relative;
 }
