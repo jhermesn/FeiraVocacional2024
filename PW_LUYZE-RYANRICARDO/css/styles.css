@@ -1,34 +1,49 @@
-.container-header {
+/*cabecalho inciio*/
+
+.header-top {
+  width: 92rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.header-top h1 {
+  flex-grow: 2;
+  display: flex;
+  margin-left: 5.5rem;
   margin-top: 0.5rem;
 }
 
-.container-header img {
+.header-top img {
+  display: flex;
   width: 27rem;
-  height: fit-content;
-  margin-top: 0;
-  margin-left: 9rem;
 }
 
-section {
-  margin-top: 2rem;
-  width: 30rem;
+.header-top {
+  display: flex;
+  align-items: center;
+}
+
+.header-top section {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  margin: auto;
+  width: 5rem;
 }
 
 #form-busca {
   display: flex;
 }
 
-.container-header input {
+.header-top input {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-  width: 14rem;
-  height: 2rem;
+  width: 15rem;
   border: 1px solid #ced4da;
 }
 
-.container-header button {
-  width: 2rem;
-  height: 2rem;
+.header-top button {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   color: #fff;
@@ -37,15 +52,25 @@ section {
 }
 
 /*cabeçalhoazul*/
-
 #menu-pages {
   background-color: #312783;
-  margin-top: 0;
-  padding-top: 0.5rem;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-#menu-pages nav {
-  margin-left: 20rem;
+#menu-pages ul {
+  display: inline;
+}
+
+#menu-pages li {
+  display: inline;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+#menu-pages li:hover {
+  opacity: 0.6;
 }
 
 #menu-pages a {
@@ -54,17 +79,6 @@ section {
   color: #fff;
   font-weight: 500;
 }
-
-#menu-pages li {
-  padding-right: 35px;
-  align-items: center;
-}
-
-#menu-pages ul {
-  align-items: center;
-  display: inline-flex;
-}
-
 /*cabecalho fim*/
 
 /*main inicio*/
@@ -168,19 +182,18 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  >p {
+  > p {
     font-size: 0.9rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    >i {
+    > i {
       color: #5d617e;
     }
   }
 }
-
 
 .authors {
   width: 100%;
