@@ -2,12 +2,6 @@
   margin-top: 0.5rem;
 }
 
-main {
-  height: 30rem;
-  /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
-  background-color: grey;
-}
-
 .container-header img {
   width: 27rem;
   height: fit-content;
@@ -73,6 +67,17 @@ section {
 
 /*cabecalho fim*/
 
+/*main inicio*/
+main {
+  background-color: grey; /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
+  position: absolute;
+  border: 0;
+  width: 100%;
+  height: 100%;
+} 
+/*main fim*/
+
+/*footer inicio*/
 footer {
   background-color: #312783;
   position: absolute;
@@ -192,3 +197,4 @@ footer {
   background-color: #5d617e;
   padding: 0.4rem;
 }
+/*footer fim*/
