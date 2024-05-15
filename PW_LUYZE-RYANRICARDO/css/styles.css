@@ -3,7 +3,8 @@
 }
 
 main {
-  height: 30rem; /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
+  height: 30rem;
+  /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
   background-color: grey;
 }
 
@@ -74,16 +75,19 @@ section {
 
 footer {
   background-color: #312783;
+  bottom: 0%;
+  top: auto;
 }
 
 .container-footer {
-  width: 92rem;
+  width: 80rem;
   height: 16rem;
   border-top: 0.25rem solid red;
   margin-left: auto;
   margin-right: auto;
-  gap: 21rem;
   position: relative;
+  bottom: 0%;
+  gap: 15.5rem;
 }
 
 #footer-img {
@@ -138,38 +142,52 @@ footer {
 }
 
 #facebook {
-background-color: #4267b3;
+  background-color: #4267b3;
 }
 
 .footer-location {
   height: fit-content;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 0.5rem;
 }
 
 #link-maps {
   text-decoration: none;
   color: #f2f2d0;
   font-family: sans-serif;
-  font-size: 1rem;
+  margin-left: auto;
+  right: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  > p {
+    font-size: 0.9rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    > i {
+      color: #5d617e;
+    }
+  }
 }
+
 
 .authors {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0%;
-  position: absolute;
+  position: sticky;
 }
 
 #github {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: #f2f2d0;
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  background-color: #5d617e;
+  padding: 0.4rem;
 }
