@@ -79,26 +79,29 @@ footer {
 .container-footer {
   width: 92rem;
   height: 16rem;
-  border-top: 0.2rem solid red;
+  border-top: 0.25rem solid red;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  gap: 20rem;
+  gap: 21rem;
+  position: relative;
 }
 
-.footer-img h1 {
+#footer-img {
   height: fit-content;
   width: 16rem;
   margin-left: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #footer_social_media {
   display: flex;
+  height: fit-content;
+  align-items: center;
   gap: 2rem;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer_social_media .footer-link {
@@ -134,26 +137,38 @@ footer {
 }
 
 #facebook {
-  background-color: #4267b3;
+background-color: #4267b3;
 }
 
-.footer-location iframe {
-  width: 18.5rem;
-  height: 12.5rem;
-  float: right;
-}
-
-.footer-location a {
+.footer-location {
+  height: fit-content;
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+}
+
+#link-maps {
   text-decoration: none;
   color: #f2f2d0;
   font-family: sans-serif;
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
-.footer-location i {
-  position: relative;
+.authors {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  position: absolute;
+}
+
+#github {
+  text-decoration: none;
+  color: #f2f2d0;
+  font-family: sans-serif;
+  font-size: 1.5rem;
 }
