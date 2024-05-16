@@ -79,23 +79,45 @@
   color: #fff;
   font-weight: 500;
 }
+
 /*cabecalho fim*/
 
 /*main inicio*/
-main {
-  background-color: grey;
-  /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
-  position: absolute;
+#inicio {
   border: 0;
   width: 100%;
   height: max-content;
+  text-align: justify;
+  > h1, h2, h3, p, li {
+    display: flex;
+    font-family:sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  > p, li {
+    font-size: 1.2rem;
+  }
+  > ul {
+    list-style-type: circle;
+  }
+}
+
+#img-main-inicio {
+  border: 0.1rem solid #ccc;
+  text-align: center;
+  width: 51rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  > img {
+    width: 50rem;
+  }
 }
 /*main fim*/
 
 /*footer inicio*/
 footer {
   background-color: #312783;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -182,14 +204,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  > p {
+  >p {
     font-size: 0.9rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    > i {
+    >i {
       color: #5d617e;
     }
   }
