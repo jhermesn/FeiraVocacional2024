@@ -96,6 +96,39 @@
 }
 /*PAGINA INICIAL FIM*/
 
+/*main inicio*/
+#inicio {
+  border: 0;
+  width: 100%;
+  height: max-content;
+  text-align: justify;
+  > h1, h2, h3, p, li {
+    display: flex;
+    font-family:sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  > p, li {
+    font-size: 1.2rem;
+  }
+  > ul {
+    list-style-type: circle;
+  }
+}
+
+#img-main-inicio {
+  border: 0.1rem solid #ccc;
+  text-align: center;
+  width: 51rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  > img {
+    width: 50rem;
+  }
+}
+/*main fim*/
+
 /*ESTRUTURA DO CURSO INICIO*/
 /*ESTRUTURA DO CURSO FIM*/
 
@@ -236,12 +269,4 @@ footer {
   padding: 0.4rem;
 }
 
-/*footer fim*/
-
-/*main inicio*/
-main {
-  width: 100%;
-}
-
-/*main fim*/
 /*footer fim*/
