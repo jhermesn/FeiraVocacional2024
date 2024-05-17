@@ -7,48 +7,24 @@
   position: relative;
 }
 
-.header-top h1 {
+.header-top a {
   flex-grow: 2;
-  display: flex;
-  margin-left: 5.5rem;
-  margin-top: 0.5rem;
 }
 
-.header-top img {
-  display: flex;
-  width: 27rem;
+.header-top a img {
+  width: 16rem;
+  margin-left: 7rem;
 }
 
-.header-top {
-  display: flex;
-  align-items: center;
-}
-
-.header-top section {
-  display: flex;
+.header-top h1 {
   flex-grow: 1;
-  text-align: center;
-  margin: auto;
-  width: 5rem;
 }
 
-#form-busca {
-  display: flex;
-}
-
-.header-top input {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-  width: 15rem;
-  border: 1px solid #ced4da;
-}
-
-.header-top button {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  color: #fff;
-  background-color: #312783;
-  border-color: #312783;
+.header-top h1 img {
+  margin-top: 0.5rem;
+  margin-right: 5rem;
+  float: right;
+  width: 27rem;
 }
 
 /*cabeçalhoazul*/
@@ -81,21 +57,9 @@
 }
 /*cabecalho fim*/
 
-/*main inicio*/
-main {
-  background-color: grey;
-  /*apenas para melhor visão, remover height e mudar background dps de adcionado o conteudo*/
-  position: absolute;
-  border: 0;
-  width: 100%;
-  height: max-content;
-}
-/*main fim*/
-
 /*footer inicio*/
 footer {
   background-color: #312783;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -213,3 +177,10 @@ footer {
 }
 
 /*footer fim*/
+
+/*main inicio*/
+main {
+  width: 100%;
+}
+
+/*main fim*/
