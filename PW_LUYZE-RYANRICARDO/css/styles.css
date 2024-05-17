@@ -102,13 +102,18 @@
   width: 100%;
   height: max-content;
   text-align: justify;
-  > h1, h2, h3, p, li {
+  > h1,
+  h2,
+  h3,
+  p,
+  li {
     display: flex;
-    font-family:sans-serif;
+    font-family: sans-serif;
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  > p, li {
+  > p,
+  li {
     font-size: 1.2rem;
   }
   > ul {
@@ -136,6 +141,60 @@
 /*SISTEMA DE AVALIAÇÃO FIM*/
 
 /*CORPO DOCENTE INICIO*/
+
+.container-main h2 {
+  margin-top: 1rem;
+  color: #312783;
+  font-size: 1.8rem;
+}
+
+.container-main h3 {
+  margin-left: 0rem;
+  font-size: 1.1rem;
+  text-indent: 1rem;
+}
+
+.container-profs {
+  line-height: 0.5rem;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.column {
+  width: 80rem;
+}
+
+.prof {
+  background-color: #e7e7e7;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  margin: 0.5rem;
+  height: 5.65rem;
+}
+
+.prof img {
+  width: 4rem;
+  float: left;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.prof h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.prof p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.75rem;
+}
+
+.prof p i {
+  letter-spacing: 0.1rem;
+}
 /*CORPO DOCENTE FIM*/
 
 /*CAMPUS INICIO*/
