@@ -7,11 +7,8 @@
   position: relative;
 }
 
-.header-top a {
+.header-top img {
   flex-grow: 2;
-}
-
-.header-top a img {
   width: 16rem;
   margin-left: 7rem;
 }
@@ -142,16 +139,20 @@
 
 /*CORPO DOCENTE INICIO*/
 
-.container-main h2 {
-  margin-top: 1rem;
+.container-main-cd h2 {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
   color: #312783;
   font-size: 1.8rem;
+  font-weight: 550;
+  margin-bottom: 0.5;
 }
 
-.container-main h3 {
-  margin-left: 0rem;
+.container-main-cd h3 {
+  margin-left: 1rem;
   font-size: 1.1rem;
   text-indent: 1rem;
+  margin-top: 0;
 }
 
 .container-profs {
@@ -160,39 +161,42 @@
   column-gap: 0.5rem;
 }
 
-.column {
+.column-profs {
   width: 80rem;
 }
 
-.prof {
+.card-profs {
   background-color: #e7e7e7;
   border-radius: 0.5rem;
   padding: 0.1rem;
   margin: 0.5rem;
-  height: 5.65rem;
+  height: 7rem;
+  display: block;
 }
 
-.prof img {
-  width: 4rem;
+.card-profs img {
   float: left;
-  margin-left: 0.5rem;
-  margin-top: 0.2rem;
+  width: 6rem;
+  margin-left: 0.75rem;
+  margin-top: 0.25rem;
+  padding-right: 1rem;
 }
 
-.prof h4 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.6rem;
+.card-profs h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.prof p {
+.card-profs p {
+  text-indent: 0.5rem;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
-  line-height: 0.75rem;
+  line-height: 0.5rem;
 }
 
-.prof p i {
+.card-profs p i {
   letter-spacing: 0.1rem;
 }
 /*CORPO DOCENTE FIM*/
