@@ -139,7 +139,7 @@
 
 /*CORPO DOCENTE INICIO*/
 
-.container-main-cd h2 {
+.container-main h2 {
   margin-top: 0.5rem;
   margin-left: 1rem;
   color: #312783;
@@ -148,7 +148,7 @@
   margin-bottom: 0.5;
 }
 
-.container-main-cd h3 {
+.container-main h3 {
   margin-left: 1rem;
   font-size: 1.1rem;
   text-indent: 1rem;
@@ -202,6 +202,7 @@
 /*CORPO DOCENTE FIM*/
 
 /*CAMPUS INICIO*/
+
 /*CAMPUS FIM*/
 
 /*COLEGIADO INICIO*/
