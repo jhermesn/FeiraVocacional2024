@@ -61,283 +61,270 @@
   width: 100%;
   height: max-content;
   text-align: justify;
-  > h1,
+  list-style-type: disc;
+
+  >h1,
   h2,
   h3,
-  p,
-  li {
+  p {
     display: flex;
     font-family: sans-serif;
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  > p,
-  li {
+
+  >p,
+  ul {
     font-size: 1.2rem;
-  }
-  > ul {
-    list-style-type: circle;
+    margin-left: 1rem;
   }
 }
 
 #img-main-inicio {
   border: 0.1rem solid #ccc;
-  text-align: center;
   width: 51rem;
   margin-left: auto;
   margin-right: auto;
 
-  > img {
+  >img {
     width: 50rem;
   }
 }
+
 /*PAGINA INICIAL FIM*/
 
-/*main index page inicio*/
-#inicio {
-  border: 0;
-  width: 100%;
-  height: max-content;
-  text-align: justify;
-  > h1,
-  h2,
-  h3,
-  p,
-  li {
-    display: flex;
-    font-family: sans-serif;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  > p,
-  li {
-    font-size: 1.2rem;
-  }
-  > ul {
-    list-style-type: circle;
-  }
-}
-
-#img-main-inicio {
-  border: 0.1rem solid #ccc;
-  text-align: center;
-  width: 51rem;
-  margin-left: auto;
-  margin-right: auto;
-
-  > img {
-    width: 50rem;
-  }
-}
-/*main index page fim*/
-
 /*ESTRUTURA DO CURSO INICIO*/
-/*ESTRUTURA DO CURSO FIM*/
-
-/*SISTEMA DE AVALIAÇÃO INICIO*/
-/*SISTEMA DE AVALIAÇÃO FIM*/
-
-/*CORPO DOCENTE INICIO*/
-
-.container-main h2 {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-  color: #312783;
-  font-size: 1.8rem;
-  font-weight: 550;
-  margin-bottom: 0.5;
-}
-
-.container-main h3 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.1rem;
-  text-indent: 1rem;
-  margin-top: 0;
+.container-li-structure {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
   text-align: justify;
 }
 
-.container-footer ul, li {
-  padding: 0.3rem;
-  list-style-type: disc;
-}
-
-.container-profs {
-  line-height: 0.5rem;
-  display: flex;
-  column-gap: 0.5rem;
-}
-
-.column-profs {
-  width: 80rem;
-}
-
-.card-profs {
-  background-color: #e7e7e7;
-  border-radius: 0.5rem;
-  padding: 0.1rem;
-  margin: 0.5rem;
-  height: 7rem;
-  display: block;
-}
-
-.card-profs img {
-  float: left;
-  width: 6rem;
-  margin-left: 0.75rem;
-  margin-top: 0.25rem;
-  padding-right: 1rem;
-}
-
-.card-profs h4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 0rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.card-profs p {
-  text-indent: 0.5rem;
-  font-size: 1rem;
-  line-height: 0.5rem;
-}
-
-.card-profs p i {
-  letter-spacing: 0.1rem;
-}
-/*CORPO DOCENTE FIM*/
-
-/*CAMPUS INICIO*/
-
-/*CAMPUS FIM*/
-
-/*COLEGIADO INICIO*/
-/*COLEGIADO FIM*/
-
-/*NDE INICIO*/
-/*NDE FIM*/
-
-/*FALE CONOSCO INICIO*/
-/*FALE CONOSCO FIM*/
-
-/*footer inicio*/
-footer {
-  background-color: #312783;
-  bottom: 0;
-  width: 100%;
-}
-
-.container-footer {
-  width: 80rem;
-  height: 10rem;
-  border-top: 0.25rem solid red;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  bottom: 0;
-  gap: 15.5rem;
-}
-
-#footer-img {
-  height: fit-content;
-  width: 16rem;
+.column-structure1 {
   margin-left: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
-#footer_social_media {
+.column-structure2 {
   display: flex;
-  height: fit-content;
-  align-items: center;
-  gap: 2rem;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  color: #f2f2d0;
+  float: right;
 }
+  /*ESTRUTURA DO CURSO FIM*/
 
-#footer_social_media .footer-link {
-  color: var(--color-neutral-40);
-  border-radius: 50%;
-  transition: all 0.4s;
-  text-decoration: none;
-}
+  /*SISTEMA DE AVALIAÇÃO INICIO*/
+  /*SISTEMA DE AVALIAÇÃO FIM*/
 
-#footer_social_media .footer-link i {
-  font-size: 1.3rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  /*CORPO DOCENTE INICIO*/
+  .container-main h1 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: #312783;
+    font-size: 3rem;
+    font-weight: 550;
+    margin-bottom: 0.5;
+  }
 
-#footer_social_media .footer-link:hover {
-  opacity: 0.8;
-}
+  .container-main h2 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: #312783;
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin-bottom: 0.5;
+  }
 
-#youtube {
-  background-color: #c4302b;
-}
+  .container-main h3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    text-indent: 1rem;
+    margin-top: 0;
+    text-align: justify;
+  }
 
-#twitter {
-  background-color: #00acee;
-}
+  .container-footer ul,
+  li {
+    padding: 0.3rem;
+    list-style-type: disc;
+  }
 
-#instagram {
-  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
+  .container-profs {
+    line-height: 0.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+  }
 
-#facebook {
-  background-color: #4267b3;
-}
+  .column-profs {
+    width: 80rem;
+  }
 
-.footer-location {
-  height: fit-content;
-  display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+  .card-profs {
+    background-color: #e7e7e7;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    height: 7rem;
+    display: block;
+  }
 
-#link-maps {
-  text-decoration: none;
-  color: #f2f2d0;
-  font-family: sans-serif;
-  margin-left: auto;
-  right: 0%;
-  margin-left: auto;
-  margin-right: auto;
+  .card-profs img {
+    float: left;
+    width: 6rem;
+    margin-left: 0.75rem;
+    margin-top: 0.25rem;
+    padding-right: 1rem;
+  }
 
-  > p {
-    font-size: 0.9rem;
-    position: relative;
+  .card-profs h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .card-profs p {
+    text-indent: 0.5rem;
+    font-size: 1rem;
+    line-height: 0.5rem;
+  }
+
+  .card-profs p i {
+    letter-spacing: 0.1rem;
+  }
+
+  /*CORPO DOCENTE FIM*/
+
+  /*CAMPUS INICIO*/
+
+  /*CAMPUS FIM*/
+
+  /*COLEGIADO INICIO*/
+  /*COLEGIADO FIM*/
+
+  /*NDE INICIO*/
+  /*NDE FIM*/
+
+  /*FALE CONOSCO INICIO*/
+  /*FALE CONOSCO FIM*/
+
+  /*footer inicio*/
+  footer {
+    background-color: #312783;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .container-footer {
+    width: 80rem;
+    height: 10rem;
+    border-top: 0.25rem solid red;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    position: relative;
+    bottom: 0;
+    gap: 15.5rem;
+  }
 
-    > i {
-      color: #5d617e;
+  #footer-img {
+    height: fit-content;
+    width: 16rem;
+    margin-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #footer_social_media {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f2f2d0;
+  }
+
+  #footer_social_media .footer-link {
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+  #footer_social_media .footer-link i {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer_social_media .footer-link:hover {
+    opacity: 0.8;
+  }
+
+  #youtube {
+    background-color: #c4302b;
+  }
+
+  #twitter {
+    background-color: #00acee;
+  }
+
+  #instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  }
+
+  #facebook {
+    background-color: #4267b3;
+  }
+
+  .footer-location {
+    height: fit-content;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #link-maps {
+    text-decoration: none;
+    color: #f2f2d0;
+    font-family: sans-serif;
+    margin-left: auto;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+    >p {
+      font-size: 0.9rem;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      >i {
+        color: #5d617e;
+      }
     }
   }
-}
 
-.authors {
-  width: 100%;
-  position: sticky;
-}
+  .authors {
+    width: 100%;
+    position: sticky;
+  }
 
-#github {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: #f2f2d0;
-  font-family: sans-serif;
-  font-size: 1rem;
-  background-color: #5d617e;
-  padding: 0.4rem;
-}
+  #github {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #f2f2d0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #5d617e;
+    padding: 0.4rem;
+  }
 
-/*footer fim*/
+  /*footer fim*/
