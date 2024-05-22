@@ -101,7 +101,107 @@
   text-align: justify;
 }
 
-.column-structure1 {
+.container-footer ul,
+li {
+  padding: 0.3rem;
+  list-style-type: disc;
+}
+/*ESTRUTURA DO CURSO fim*/
+
+/*corpo docente inicio*/
+.container-profs {
+  line-height: 0.5rem;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.column-profs {
+  width: 80rem;
+}
+
+.card-profs {
+  background-color: #e7e7e7;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  margin: 0.5rem;
+  height: 7rem;
+  display: block;
+}
+
+.card-profs img {
+  float: left;
+  width: 6rem;
+  margin-left: 0.75rem;
+  margin-top: 0.25rem;
+  padding-right: 1rem;
+}
+
+.card-profs h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-profs p {
+  text-indent: 0.5rem;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+.card-profs p i {
+  letter-spacing: 0.1rem;
+}
+/*CORPO DOCENTE FIM*/
+
+/*CAMPUS INICIO*/
+.campus-img {
+  margin-left: 1rem;
+  width: 92rem;
+}
+
+.campus-info p {
+  margin-left: 1rem;
+}
+
+.campus-maps {
+  float: right;
+  margin-right: 1rem;
+}
+/*CAMPUS FIM*/
+
+/*COLEGIADO INICIO*/
+/*COLEGIADO FIM*/
+
+/*NDE INICIO*/
+/*NDE FIM*/
+
+/*FALE CONOSCO INICIO*/
+/*FALE CONOSCO FIM*/
+
+/*footer inicio*/
+footer {
+  background-color: #312783;
+  bottom: 0;
+  width: 100%;
+}
+
+.container-footer {
+  width: 80rem;
+  height: 10rem;
+  border-top: 0.25rem solid red;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 0;
+  gap: 15.5rem;
+}
+
+#footer-img {
+  height: fit-content;
+  width: 16rem;
+>>>>>>> Stashed changes
   margin-left: 0.5rem;
 }
 

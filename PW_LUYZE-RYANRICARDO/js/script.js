@@ -10,7 +10,7 @@ var currentBanner = 0;
 
 function switchBanner() {
   currentBanner = (currentBanner + 1) % 6;
-  document.querySelector(".campus img").src = banners[currentBanner];
+  document.querySelector(".campus-img img").src = banners[currentBanner];
 }
 
 var timer = setInterval(switchBanner, 1000);
