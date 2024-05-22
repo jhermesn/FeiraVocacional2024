@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -83,11 +83,59 @@
     <main>
       <div class="container-main container">
         <h2>CAMPUS</h2>
-        <div class="campus-img">
-          <img
-            src="img/campus_banner1.jpg"
-            alt="Campus XXII - UEPA Ananindeua"
-          />
+        <div id="campus-img">
+          <div class="slider">
+            <div class="slides">
+              <img
+                class="slide"
+                src="/img/campus_banner1.jpg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+              <img
+                class="slide"
+                src="/img/campus_banner2.jpg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+              <img
+                class="slide"
+                src="/img/campus_banner3.jpg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+              <img
+                class="slide"
+                src="/img/campus_banner4.jpg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+              <img
+                class="slide"
+                src="/img/campus_banner5.jpg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+              <img
+                class="slide"
+                src="/img/campus_banner6.jpeg"
+                alt="Campus XXII - UEPA Ananindeua"
+              />
+            </div>
+          </div>
+          <!--button prev and next-->
+          <div class="buttons">
+            <button id="prev">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <button id="next">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+          <!-- dots -->
+          <ul class="dots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
         <div class="campus-desc d-flex">
           <div class="campus-info">
