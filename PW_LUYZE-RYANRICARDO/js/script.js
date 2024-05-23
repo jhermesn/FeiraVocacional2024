@@ -10,13 +10,31 @@ form.addEventListener("submit", (event) => {
 
   // verifica se o nome está vazio
   if (nameInput.value === "") {
-    alert("Por favor, preencha o seu nome");
+    alert("Por favor, preencha o seu nome.");
     return;
   }
 
   // verifica se o email está preenchido e se é válido
   if (emailInput.value === "" || !isEmailValid(emailInput.value)) {
-    alert("Por favor, preencha o seu email");
+    alert("Por favor, preencha o seu email.");
+    return;
+  }
+
+  // verifica s o numro de tefeone está preenchido
+  if (foneInput.value === "") {
+    alert("Por favor, informe o número de telefone para contato.");
+    return;
+  }
+
+  // verifica se a situaçao foi selcionada
+  if (subjectSelect.value === "") {
+    alert("Por favor, selecione o assunto.");
+    return;
+  }
+
+  // verifica se a mensagem está preenchida
+  if (messageTextarea.value === "") {
+    alert("Por favor, disserte.");
     return;
   }
 
