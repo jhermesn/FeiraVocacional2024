@@ -225,6 +225,29 @@ li {
 /*NDE FIM*/
 
 /*FALE CONOSCO INICIO*/
+#forms-container {
+  padding: 1.5rem;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.card label {
+  margin-bottom: 0.1rem;
+  margin-top: 0.35rem;
+}
+
+.card button {
+  margin-top: 0.35rem;
+}
+
+#forms-container h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /*FALE CONOSCO FIM*/
 
 /*footer inicio*/
