@@ -226,7 +226,9 @@ li {
 
 /*FALE CONOSCO INICIO*/
 #forms-container {
+  justify-content: center;
   padding: 1.5rem;
+  width: 70rem;
 }
 
 .card {
@@ -247,6 +249,7 @@ li {
 #forms-container h2 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 700;
 }
 /*FALE CONOSCO FIM*/
 
