@@ -82,124 +82,52 @@
     <!--fim header-->
     <main>
       <div class="container-main container">
-        <section id="campusSld" class="text-center">
-          <div
-            id="carouselCampus"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselCampus"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
+        <div id="campus-slider" class="row justify-content-between">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img
+                src="img/campus_banner1.jpg"
+                alt="Campus Ananindeua"
+                id="slide-1"
+              />
+              <img
+                src="img/campus_banner2.jpg"
+                alt="Campus Ananindeua"
+                id="slide-2"
+              />
+              <img
+                src="img/campus_banner3.jpg"
+                alt="Campus Ananindeua"
+                id="slide-3"
+              />
+              <img
+                src="img/campus_banner4.jpg"
+                alt="Campus Ananindeua"
+                id="slide-4"
+              />
+              <img
+                src="img/campus_banner5.jpg"
+                alt="Campus Ananindeua"
+                id="slide-5"
+              />
+              <img
+                src="img/campus_banner6.jpeg"
+                alt="Campus Ananindeua"
+                id="slide-6"
+              />
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./img/campus_banner1.jpg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/campus_banner2.jpg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/campus_banner3.jpg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/campus_banner4.jpg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/campus_banner5.jpg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/campus_banner6.jpeg"
-                  class="d-flex"
-                  alt="campus Ananindeua"
-                />
-              </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+              <a href="#slide-6"></a>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselCampus"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselCampus"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </section>
-        <div class="campus-desc d-flex">
-          <div id="campus-info">
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-sm-6 flex-column d-flex">
             <h2>CAMPUS</h2>
             <h3>
               Atualmente, o curso de Ciência de Dados está presente apenas no
@@ -216,7 +144,7 @@
             <p><b>E-mail:</b> campusananindeua@uepa.br</p>
             <p><b>Telefone:</b> 91 98521-3114</p>
           </div>
-          <div class="campus-maps">
+          <div class="col-sm-6 flex-column d-flex">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.880837153389!2d-48.408057!3d-1.3442937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46142af21ed2d%3A0x7fa4f155a5eecf6c!2sUEPA%20-%20Universidade%20do%20Estado%20do%20Par%C3%A1%20-%20Campus%20XXII%20Ananindeua!5e0!3m2!1spt-BR!2sbr!4v1716212505279!5m2!1spt-BR!2sbr"
               width="400"
