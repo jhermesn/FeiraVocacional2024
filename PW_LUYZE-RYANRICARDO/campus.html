@@ -82,63 +82,125 @@
     <!--fim header-->
     <main>
       <div class="container-main container">
-        <h2>CAMPUS</h2>
-        <div id="campus-img">
-          <div class="slider">
-            <div class="slides">
-              <img
-                class="slide"
-                src="/img/campus_banner1.jpg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
-              <img
-                class="slide"
-                src="/img/campus_banner2.jpg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
-              <img
-                class="slide"
-                src="/img/campus_banner3.jpg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
-              <img
-                class="slide"
-                src="/img/campus_banner4.jpg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
-              <img
-                class="slide"
-                src="/img/campus_banner5.jpg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
-              <img
-                class="slide"
-                src="/img/campus_banner6.jpeg"
-                alt="Campus XXII - UEPA Ananindeua"
-              />
+        <section id="campusSld" class="text-center">
+          <div
+            id="carouselCampus"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCampus"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
             </div>
-          </div>
-          <!--button prev and next-->
-          <div class="buttons">
-            <button id="prev">
-              <i class="bi bi-caret-left-fill"></i>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/campus_banner1.jpg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/campus_banner2.jpg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/campus_banner3.jpg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/campus_banner4.jpg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/campus_banner5.jpg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/campus_banner6.jpeg"
+                  class="d-flex"
+                  alt="campus Ananindeua"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselCampus"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button id="next">
-              <i class="bi bi-caret-right-fill"></i>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselCampus"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <!-- dots -->
-          <ul class="dots">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        </section>
         <div class="campus-desc d-flex">
-          <div class="campus-info">
+          <div id="campus-info">
+            <h2>CAMPUS</h2>
             <h3>
               Atualmente, o curso de Ciência de Dados está presente apenas no
               campus XXII - Ananindeua, localizado na Avenida Independência, no
