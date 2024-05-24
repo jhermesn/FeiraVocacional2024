@@ -1,29 +1,19 @@
 /*cabecalho inciio*/
-
 .header-top {
-  width: 92rem;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  width: 100%;
 }
 
 .header-top img {
-  flex-grow: 2;
   width: 16rem;
-  margin-left: 7rem;
-}
-
-.header-top h1 {
-  flex-grow: 1;
+  margin-left: 1.5rem;
 }
 
 .header-top h1 img {
   margin-top: 0.5rem;
-  margin-right: 5rem;
+  margin-left: 0.5rem;
   float: right;
   width: 27rem;
 }
-
 /*cabeçalhoazul*/
 #menu-pages {
   background-color: #312783;
@@ -212,6 +202,37 @@ li {
   aspect-ratio: 16/9;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
+}
+
+.container-campus h2 {
+  margin-left: 0;
+  color: #312783;
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+
+.container-campus h3 {
+  margin-left: 0;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  text-indent: 1rem;
+  margin-top: 0.25rem;
+  text-align: justify;
+}
+
+.container-campus p {
+  margin-left: 0;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  text-align: justify;
+}
+
+#desc-campus-column {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 /*CAMPUS FIM*/

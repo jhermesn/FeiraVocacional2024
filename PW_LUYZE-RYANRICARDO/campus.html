@@ -22,17 +22,22 @@
     <!--header-->
     <header>
       <div class="container-header">
-        <div class="header-top d-flex">
-          <a href="./index.html">
-            <img
-              src="./img/logocdados.png"
-              alt="Logo do curso de ciência de dados."
-          /></a>
-          <!--logo-->
-          <h1>
-            <img src="img/logo_uepa2023.png" />
-          </h1>
-          <!--busca-->
+        <div class="container">
+          <div class="row d-flex header-top">
+            <div class="col-lg-8 d-flex">
+              <a href="./index.html">
+                <img
+                  src="./img/logocdados.png"
+                  alt="Logo do curso de ciência de dados."
+              /></a>
+            </div>
+            <!--logo-->
+            <div class="col-lg-4 d-flex d-none d-lg-block">
+              <h1>
+                <img src="img/logo_uepa2023.png" />
+              </h1>
+            </div>
+          </div>
         </div>
 
         <!--menu navegacao de paginas-->
@@ -81,7 +86,7 @@
     </header>
     <!--fim header-->
     <main>
-      <div class="container-main container">
+      <div class="container-campus container">
         <!-- carousel -->
         <div
           id="demo"
@@ -133,8 +138,8 @@
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="col-sm-8 flex-column d-flex">
+        <div id="desc-campus-column" class="row align-content-center">
+          <div class="col-xl-8 flex-fill">
             <h2>CAMPUS</h2>
             <h3>
               Atualmente, o curso de Ciência de Dados está presente apenas no
@@ -151,7 +156,7 @@
             <p><b>E-mail:</b> campusananindeua@uepa.br</p>
             <p><b>Telefone:</b> 91 98521-3114</p>
           </div>
-          <div class="col-sm-4 flex-column d-flex">
+          <div class="col-xl-4 flex-fill">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.880837153389!2d-48.408057!3d-1.3442937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a46142af21ed2d%3A0x7fa4f155a5eecf6c!2sUEPA%20-%20Universidade%20do%20Estado%20do%20Par%C3%A1%20-%20Campus%20XXII%20Ananindeua!5e0!3m2!1spt-BR!2sbr!4v1716212505279!5m2!1spt-BR!2sbr"
               width="400rem"
