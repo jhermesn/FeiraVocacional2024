@@ -239,6 +239,15 @@ li {
 
 /*COLEGIADO INICIO*/
 
+#card-committee {
+  height: 38rem;
+}
+
+#pics-committee {
+  display: flex;
+  
+}
+
 /*COLEGIADO FIM*/
 
 /*NDE INICIO*/
