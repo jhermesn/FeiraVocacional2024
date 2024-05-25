@@ -74,41 +74,35 @@
 /*container- main*/
 
 /*PAGINA INICIO*/
-#inicio {
-  border: 0;
-  width: 100%;
-  height: max-content;
-  text-align: justify;
-  list-style-type: disc;
-
-  > h1,
-  h2,
-  h3,
-  p {
-    display: flex;
-    font-family: sans-serif;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  > p,
-  ul {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-  }
+#hp-first-text h4 {
+  font-size: 3.5rem;
+  width: 25rem;
+  line-height: 3.75rem;
+  font-weight: bold;
+  color: #312783;
 }
 
-#img-main-inicio {
-  border: 0.1rem solid #ccc;
-  width: 51rem;
-  margin-left: auto;
-  margin-right: auto;
+#hp-first-text h5 {
+  font-size: 1.5rem;
 
-  > img {
-    width: 50rem;
-  }
+  color: #c4302b;
 }
 
+#hp-first-btn button {
+  margin-top: 0.75rem;
+  border-color: #312783;
+  background-color: #312783;
+  border-radius: 1rem;
+}
+
+#hp-first-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#hp-first-btn button:hover {
+  opacity: 0.9;
+}
 /*PAGINA INICIAL FIM*/
 
 /*ESTRUTURA DO CURSO INICIO*/
@@ -138,6 +132,20 @@ li {
 /*CORPO DOCENTE INICIO*/
 #cont-prof-slide {
   margin-bottom: 2rem;
+}
+
+.card-prof-slide {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  height: 27rem !important;
+  box-sizing: border-box;
+}
+
+.card-prof-slide button {
+  margin-top: 0.35rem;
 }
 
 .card-prof-slide .prof-name {
@@ -232,7 +240,7 @@ li {
 /*COLEGIADO INICIO*/
 
 #card-committee {
-  height: 38rem;;
+  height: 38rem;
 }
 
 #pics-committee .prof-name-committee {
@@ -268,6 +276,19 @@ li {
   text-decoration: none;
   color: #fff;
 }
+
+.card-cmt {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-cmt button {
+  margin-top: 0.35rem;
+}
+
 /*COLEGIADO FIM*/
 
 /*NDE INICIO*/
@@ -275,19 +296,19 @@ li {
 
 /*FALE CONOSCO INICIO*/
 
-.card {
+.card-fc {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
   border: none !important;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
-.card label {
+.card-fc label {
   margin-bottom: 0.1rem;
   margin-top: 0.35rem;
 }
 
-.card button {
+.card-fc button {
   margin-top: 0.35rem;
 }
 #form label {
