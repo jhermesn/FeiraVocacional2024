@@ -261,18 +261,26 @@ li {
 .card button {
   margin-top: 0.35rem;
 }
-
-#name::placeholder,
-#email::placeholder,
-#fone::placeholder,
-#message::placeholder {
-  color: #cc0000cc;
-  opacity: 1; /* Firefox */
+#form label {
+  font-weight: 600;
 }
 
-::-ms-input-placeholder {
-  /* Edge 12 -18 */
-  color: red;
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control.error select {
+  border-color: #ff3860;
+}
+
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 #forms-container h2 {

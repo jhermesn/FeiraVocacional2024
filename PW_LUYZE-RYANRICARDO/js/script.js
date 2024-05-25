@@ -1,75 +1,87 @@
-const form = document.querySelector("#form");
-const nameInput = document.querySelector("#name");
-const emailInput = document.querySelector("#email");
-const foneInput = document.querySelector("#fone");
-const subjectSelect = document.querySelector("#subject");
-const messageTextarea = document.querySelector("#message");
+const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const foneInput = document.getElementById("fone");
+const subjectSelect = document.getElementById("subject");
+const messageTextarea = document.getElementById("message");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  // verifica se o nome está vazio
-  if (nameInput.value === "" || nameInput.value === " ") {
-    nameInput.placeholder = "Campo Obrigatório";
-    nameInput.style.border = "1px solid #cc0000";
-    return;
+  validateInputs();
+
+  // envia o forms caso todos os campos estejam preenchidos
+  if (document.querySelectorAll(".success").length === 5) {
+    form.submit();
+  }
+});
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add("error");
+  inputControl.classList.remove("success");
+};
+
+const setSucess = (element) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = "";
+  inputControl.classList.add("success");
+  inputControl.classList.remove("error");
+};
+
+const validateInputs = () => {
+  const nameInputValue = nameInput.value.trim();
+  const emailInputValue = emailInput.value.trim();
+  const foneInputValue = foneInput.value.trim();
+  const subjectSelectValue = subjectSelect.value.trim();
+  const messageTextareaValue = messageTextarea.value.trim();
+
+  //verifica se o nome está preenchido
+  if (nameInputValue === "") {
+    setError(nameInput, "Campo Obrigatório");
   } else {
-    nameInput.placeholder = " ";
-    nameInput.style.border = "1px solid #dee2e6";
+    setSucess(nameInput);
   }
 
   // verifica se o email está preenchido e se é válido
-  if (emailInput.value === "" || !isEmailValid(emailInput.value)) {
-    emailInput.placeholder = "Campo Obrigatório";
-    emailInput.style.border = "1px solid #cc0000";
-    return;
+  if (emailInputValue === "") {
+    setError(emailInput, "Campo Obrigatório");
+  } else if (!isValidEmail(emailInputValue)) {
+    setError(emailInput, "E-mail inválido");
   } else {
-    emailInput.placeholder = " ";
-    emailInput.style.border = "1px solid #dee2e6";
+    setSucess(emailInput);
   }
 
-  // verifica s o numro de tefeone está preenchido
-  if (foneInput.value === "" || foneInput.value === " ") {
-    foneInput.placeholder = "Campo Obrigatório";
-    foneInput.style.border = "1px solid #cc0000";
-    return;
+  // verifica se o numero de tefeone está preenchido
+  if (foneInputValue === "") {
+    setError(foneInput, "Campo Obrigatório");
   } else {
-    foneInput.placeholder = " ";
-    foneInput.style.border = "1px solid #dee2e6";
+    setSucess(foneInput);
   }
 
   // verifica se a situaçao foi selcionada
-  if (subjectSelect.value === "") {
-    subjectSelect.style.border = "1px solid #cc0000";
-    return;
+  if (subjectSelectValue === "") {
+    setError(subjectSelect, "Campo Obrigatório");
   } else {
-    subjectSelect.style.border = "1px solid #dee2e6";
+    setSucess(subjectSelect);
   }
 
   // verifica se a mensagem está preenchida
-  if (messageTextarea.value === "" || messageTextarea.value === " ") {
-    messageTextarea.placeholder = "Campo Obrigatório";
-    messageTextarea.style.border = "1px solid #cc0000";
-    return;
+  if (messageTextareaValue === "") {
+    setError(messageTextarea, "Campo Obrigatório");
   } else {
-    messageTextarea.placeholder = " ";
-    messageTextarea.style.border = "1px solid #dee2e6";
+    setSucess(messageTextarea);
   }
-
-  // envia o forms caso todos os campos estejam preenchidos
-  form.submit();
-});
+};
 
 //função que valida email
-function isEmailValid(email) {
-  //cria uma regex para validar email
-  const emailRegex = new RegExp(
-    // usuario23@host.com.br
-    /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
-  );
-
-  if (emailRegex.test(email)) {
-    return true;
-  }
-  return false;
-}
+const isValidEmail = (email) => {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
