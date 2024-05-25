@@ -232,13 +232,42 @@ li {
 /*COLEGIADO INICIO*/
 
 #card-committee {
-  height: 38rem;
+  height: 38rem;;
 }
 
-#pics-committee {
-  display: flex;
+#pics-committee .prof-name-committee {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
+#pics-committee .prof-mail-committee {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#cards-committee img {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#cards-committee button {
+  background: #312783;
+  border: none;
+}
+
+#cards-committee button:hover {
+  background: #322783;
+  opacity: 0.9;
+}
+
+#cards-committee button a {
+  text-decoration: none;
+  color: #fff;
+}
 /*COLEGIADO FIM*/
 
 /*NDE INICIO*/
