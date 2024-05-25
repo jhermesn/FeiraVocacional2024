@@ -74,6 +74,11 @@
 /*container- main*/
 
 /*PAGINA INICIO*/
+#hp-section-one {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
 #hp-first-text h4 {
   font-size: 3.5rem;
   width: 25rem;
@@ -103,6 +108,30 @@
 #hp-first-btn button:hover {
   opacity: 0.9;
 }
+
+#hp-section-two {
+  margin-top: 13rem;
+  margin-bottom: 3rem;
+}
+
+#container-hp-acc .hp-accordion {
+  background-color: rgb(228, 228, 228);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#container-hp-acc .hp-accordion,
+.hp-accordion-header,
+.hp-accordion-body {
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  min-height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
 /*PAGINA INICIAL FIM*/
 
 /*ESTRUTURA DO CURSO INICIO*/
