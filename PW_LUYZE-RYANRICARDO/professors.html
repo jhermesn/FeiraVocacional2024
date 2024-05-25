@@ -22,7 +22,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -95,277 +95,300 @@
     <!--fim header-->
     <main>
       <div class="container-main container">
-        <h2>CORPO DOCENTE</h2>
-        <h3>
-          Nossa equipe de docentes é composta por especialistas com vasta
-          experiência em pesquisa, indústria e ensino. Eles são apaixonados por
-          Ciência de Dados e estão comprometidos em fornecer aos alunos a melhor
-          experiência de aprendizado possível. Conheça os nossos professores:
-        </h3>
-      </div>
-      <section class="container" style="position: relative">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper container">
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_italo.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof">Prof. Ms. Ítalo Flexa Di Paolo</span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> itflexa@uepa.br
-                </span>
+        <div class="row">
+          <h2>CORPO DOCENTE</h2>
+          <h3>
+            Nossa equipe de docentes é composta por especialistas com vasta
+            experiência em pesquisa, indústria e ensino. Eles são apaixonados
+            por Ciência de Dados e estão comprometidos em fornecer aos alunos a
+            melhor experiência de aprendizado possível. Conheça os nossos
+            professores:
+          </h3>
+        </div>
+        <div id="cont-prof-slide" class="row justify-content-between">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img src="img/prof_italo.png" alt="" style="width: 10rem" />
+                    <p class="prof-name">Prof. Ms. Ítalo Flexa Di Paolo</p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> itflexa@uepa.br</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/7195767161641034"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/7195767161641034">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img src="img/prof_jorge.jpg" alt="" style="width: 10rem" />
+                    <p class="prof-name">
+                      Prof. Dr. Jorge Amaro de Sarges Cardoso
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> jcardoso217@gmail.com</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/8483188010111086"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_gutierrez.png"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">
+                      Prof. Dr. Carlos Benedito Barreiros Gutierrez
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill">
+                        carlos.gutierrez@uepa.br</i
+                      >
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/0920214717536195"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img src="img/prof_marta.jpg" alt="" style="width: 10rem" />
+                    <p class="prof-name">
+                      Prof. Dr. Marta de Oliveira Barreiros
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill">
+                        barreiros1232@gmail.com</i
+                      >
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/2695239794047991"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_armando.png"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">
+                      Prof. Esp. Armando José de Sá Santos
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> não informado</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/6286321140581380"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img src="img/prof_fadul.png" alt="" style="width: 10rem" />
+                    <p class="prof-name">Prof. Dr. Jairo Fadul de Lima</p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> não informado</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/5482391365956398"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_marcela.jpg"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">Prof. Dr. Marcela Alves de Souza</p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill">
+                        marcelaalves89@gmail.com</i
+                      >
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/5948064802257396"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_anderson.png"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">
+                      Prof. Dr. Anderson Jorge Serra da Costa
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> não informado</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/7707885586024191"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_antonio.png"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">
+                      Prof. Mes. Antônio Marcos Cardoso Silva
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> amarcos26@gmail.com</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/3949852619017976"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img src="img/prof_leno.jpg" alt="" style="width: 10rem" />
+                    <p class="prof-name">Prof. Dr. Leno Rodrigues Martins</p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> lenormartins@gmail.com</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/0564896752552040"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_renato.png"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">Prof. Mes. Renato Ferreira Carr</p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> renatocarr@gmail.com</i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/5132308037922115"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col d-flex flex-column">
+                  <div
+                    class="card-prof-slide card align-items-center"
+                    style="height: 28rem"
+                  >
+                    <img
+                      src="img/prof_quinto.jpg"
+                      alt=""
+                      style="width: 10rem"
+                    />
+                    <p class="prof-name">
+                      Prof. Dr. Wanderson Alexandre da Silva Quinto
+                    </p>
+                    <p class="prof-mail">
+                      <i class="bi bi-envelope-fill"> não informado </i>
+                    </p>
+                    <button class="btn btn-primary">
+                      <a href="http://lattes.cnpq.br/4429230658129917"
+                        ><i class="ai ai-lattes"></i> Lattes</a
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_jorge.jpg" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Dr. Jorge Amaro de Sarges Cardoso</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> jcardoso217@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/8483188010111086">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_gutierrez.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Dr. Carlos Benedito Barreiros Gutierrez
-                </span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> carlos.gutierrez@uepa.br
-                </span>
-              </div>
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/0920214717536195">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_armando.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Esp. Armando José de Sá Santos</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> não informado
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/6286321140581380">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_marta.jpg" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Dr. Marta de Oliveira Barreiros</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> barreiros1232@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/2695239794047991">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_marcela.jpg" alt="" />
-              <div class="name-email">
-                <span class="name-prof">Prof. Dr. Marcela Alves de Souza</span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> marcelaalves89@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/5948064802257396">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_fadul.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof">Prof. Dr. Jairo Fadul de Lima</span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> não informado
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/5482391365956398">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_anderson.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Dr. Anderson Jorge Serra da Costa</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> não informado
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/7707885586024191">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_antonio.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Mes. Antônio Marcos Cardoso Silva</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> amarcos26@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/3949852619017976">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_leno.jpg" alt="" />
-              <div class="name-email">
-                <span class="name-prof">Prof. Dr. Leno Rodrigues Martins</span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> lenormartins@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/0564896752552040">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_renato.png" alt="" />
-              <div class="name-email">
-                <span class="name-prof">Prof. Mes. Renato Ferreira Carr</span>
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> renatocarr@gmail.com
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/5132308037922115">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div
-              id="profs-cards"
-              class="swiper-slide card d-flex align-items-center"
-            >
-              <img src="img/prof_quinto.jpg" alt="" />
-              <div class="name-email">
-                <span class="name-prof"
-                  >Prof. Dr. Wanderson Alexandre da Silva Quinto</span
-                >
-                <span class="email-prof">
-                  <i class="bi bi-envelope-fill"></i> não informado
-                </span>
-              </div>
-
-              <div class="button-lattes">
-                <button class="btn btn-primary">
-                  <a href="http://lattes.cnpq.br/4429230658129917">
-                    <i class="ai ai-lattes"></i> Lattes
-                  </a>
-                </button>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="controllers">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
+      </div>
     </main>
     <!--fim da main-->
     <footer>
@@ -438,23 +461,31 @@
     ></script>
 
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 40,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        loop: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
         },
       });
     </script>
