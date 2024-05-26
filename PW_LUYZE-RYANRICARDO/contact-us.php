@@ -1,15 +1,20 @@
+<?php
+include_once('db/config.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema de Avaliação</title>
+  <title>Fale Conosco</title>
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -63,59 +68,64 @@
   </header>
   <!--fim header-->
   <main>
-    <div class="container-main container">
-      <h2>SISTEMA DE AVALIAÇÃO</h2>
+    <div class="container container-main">
+      <div id="forms-container" class="card card-fc">
+        <h2 class="text-center mb-2">Fale Conosco</h2>
+        <form action="contact-us.php" id="form" class="form-card" method="post">
+          <div class="row justify-content-between text-left">
+            <div class="col-sm-6 flex-column d-flex input-control">
+              <label for="name" class="form-label px-1">Nome Completo<span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="name" name="nome" />
+              <div class="error px-1"></div>
+            </div>
 
-      <h3>
-        O processo de ensino-aprendizagem será desenvolvido de acordo com o
-        que prevê o Regimento Geral da UEPA. A avaliação é uma tarefa didática
-        necessária e permanente do trabalho docente que deve acompanhar passo
-        a passo o processo de ensino e aprendizagem. A avaliação do processo
-        de ensino –aprendizagem deverá ser realizada individualmente, cada um
-        fazendo sua própria reflexão e, em conjunto, os professores e alunos,
-        objetivando identificar os progressos e dificuldades no
-        ensino-aprendizagem, assim como reorientar as ações educativas. A
-        avaliação deve cumprir sua função auto- analise e a busca de novos
-        caminhos para o prosseguimento do processo de construção do
-        conhecimento.
-      </h3>
-      <h3>
-        A avaliação do desempenho dos alunos será efetivada, obrigatoriamente,
-        mediante a realização de 04(quatro) avaliações e com frequência
-        obrigatória de 75%, vedado o abono de faltas, salvo nos casos
-        previstos em lei. Caso não consiga aprovação por média, o aluno deverá
-        ser submetido à avaliação final.
-      </h3>
+            <div class="col-sm-6 flex-column d-flex input-control">
+              <label for="email" class="form-label px-1">Email<span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="email" name="email" />
+              <div class="error px-1"></div>
+            </div>
+          </div>
 
-      <h3>
-        O Curso de Ciência de Dados poderá utilizar instrumentos e / ou
-        técnicas, atendendo às especificidades das disciplinas:
-      </h3>
-      <div id="table-evaluation">
-        <ul style="width: fit-content;">
-          <li>Provas discursivas e analíticas escritas / orais;</li>
-          <li>Trabalho em grupo e / ou individuais;</li>
-          <li>Atividades de laboratório;</li>
-          <li>Projetos técnicos;</li>
-          <li>Elaboração de Projeto de Ensino e de Pesquisa;</li>
-          <li>Produção própria de conhecimento, artigo, resenhas e etc.;</li>
-          <li>Participação em debates e seminário;</li>
-          <li>Frequência, pontualidade e assiduidade;</li>
-        </ul>
-        <figure class="figure">
-          <p class="h5 text-center">Quadro de Cálculo de Avaliação Final</h3>
-          <img src="img/tabela-curso.png" class="figure-img img-fluid rounded" alt="" width="600">
-          <figcaption class="figure-caption text-right" style="float: right; margin-right: 7rem;">Fonte: Regimento do Curso</figcaption>
-        </figure>
+          <div class="row justify-content-between text-left">
+            <div class="col-sm-6 flex-column d-flex input-control">
+              <label for="fone" class="form-label px-1">Número de Telefone<span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="fone" name="fone" />
+              <div class="error px-1"></div>
+            </div>
+
+            <div class="col-sm-6 flex-column d-flex input-control">
+              <label for="subject" class="form-label px-1">Assunto<span class="text-danger"> *</span></label>
+              <select name="assunto" class="form-select" id="subject">
+                <option value="">--</option>
+                <option value="info">Informação</option>
+                <option value="suggestion">Sugestão</option>
+                <option value="compliment">Elogio</option>
+                <option value="complaint">Denúncia</option>
+                <option value="request">Solicitação</option>
+                <option value="request">Outro</option>
+              </select>
+              <div class="error px-1"></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between text-left">
+            <div class="col-12 flex-column d-flex input-control">
+              <label for="message" class="form-label px-1">Descrição: <span class="text-danger"> *</span></label>
+              <textarea class="form-control" id="message" name="descricao"></textarea>
+              <div class="error px-1"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <button name="botao_enviar" type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
       </div>
-      <h3>
-        Outros instrumentos poderão ser incluídos no processo de avaliação
-        assim como, as avaliações do Estágio Supervisionado e dos trabalhos de
-        Conclusão de Curso / TCC.
-      </h3>
-
     </div>
   </main>
+  <!--fim main-->
   <footer>
     <div class="container-footer d-flex">
       <div id="footer-img">
@@ -157,9 +167,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
