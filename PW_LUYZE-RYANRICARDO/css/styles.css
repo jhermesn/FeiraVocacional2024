@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
 /*cabecalho inciio*/
 .header-top {
   width: 100%;
@@ -40,20 +46,12 @@
   text-decoration: none;
   font-size: 1rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /*cabecalho fim*/
 
 /*container-main*/
-.container-main h1 {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-  color: #312783;
-  font-size: 3rem;
-  font-weight: 550;
-  margin-bottom: 0.5;
-}
 
 .container-main h2 {
   margin-top: 0.5rem;
@@ -64,6 +62,7 @@
 }
 
 .container-main h3 {
+  font-weight: 400;
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1.1rem;
@@ -83,13 +82,12 @@
   font-size: 3.5rem;
   width: 25rem;
   line-height: 3.75rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #312783;
 }
 
 #hp-first-text h5 {
   font-size: 1.5rem;
-
   color: #c4302b;
 }
 
@@ -114,24 +112,78 @@
   margin-bottom: 3rem;
 }
 
+#container-hp-acc {
+  width: fit-content;
+}
+
 #container-hp-acc .hp-accordion {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(240, 240, 240);
   border-radius: 8px;
   padding: 12px;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(114, 114, 114, 0.2);
+  margin-bottom: 0.25rem !important;
 }
 
 #container-hp-acc .hp-accordion,
 .hp-accordion-header,
 .hp-accordion-body {
-  margin: 0 !important;
+  margin: 0;
   box-sizing: border-box !important;
-  min-height: 2.25rem;
   align-items: center;
   justify-content: center;
 }
 
+.hp-accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hp-accordion-header span {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.hp-accordion-body {
+  color: #444;
+  font-size: 1.1rem;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: opacity 0.3s;
+}
+
+.hp-accordion-body.active {
+  height: 100%;
+  box-sizing: border-box;
+  opacity: 1;
+  padding-top: 0.5rem;
+}
+
+.hp-accordion-body p {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.arrow {
+  transition: transform 0.2s linear !important;
+}
+
+.hp-accordion:has(.active) .arrow {
+  transform: rotate(180deg) !important;
+}
 /*PAGINA INICIAL FIM*/
 
 /*ESTRUTURA DO CURSO INICIO*/
@@ -169,7 +221,6 @@ li {
   padding: 1rem;
   border: none !important;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-  height: 27rem !important;
   box-sizing: border-box;
 }
 
@@ -179,14 +230,14 @@ li {
 
 .card-prof-slide .prof-name {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .card-prof-slide .prof-mail {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -214,6 +265,11 @@ li {
 .swiper-pagination-bullet {
   background: #c4302b !important;
 }
+
+.profs-wrapper {
+  margin-bottom: 1rem;
+}
+
 /*CORPO DOCENTE FIM*/
 
 /*CAMPUS INICIO*/
@@ -241,6 +297,7 @@ li {
 }
 
 .container-campus h3 {
+  font-weight: 400;
   margin-left: 0;
   margin-right: 1rem;
   font-size: 1.1rem;
@@ -250,6 +307,7 @@ li {
 }
 
 .container-campus p {
+  font-weight: 400;
   margin-left: 0;
   margin-right: 1rem;
   font-size: 1.1rem;
@@ -268,59 +326,26 @@ li {
 
 /*COLEGIADO INICIO*/
 
-#card-committee {
-  height: 38rem;
+.cmt-cont {
+  margin-bottom: 2rem !important;
 }
 
-#pics-committee .prof-name-committee {
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-#pics-committee .prof-mail-committee {
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-#cards-committee img {
-  border-radius: 5px;
+.cmt-wrapper {
   margin-bottom: 1rem;
-}
-
-#cards-committee button {
-  background: #312783;
-  border: none;
-}
-
-#cards-committee button:hover {
-  background: #322783;
-  opacity: 0.9;
-}
-
-#cards-committee button a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.card-cmt {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border: none !important;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-cmt button {
-  margin-top: 0.35rem;
 }
 
 /*COLEGIADO FIM*/
 
 /*NDE INICIO*/
+
+.cont-nde {
+  margin-bottom: 2rem;
+}
+
+.nde-wrapper {
+  margin-bottom: 1rem;
+}
+
 /*NDE FIM*/
 
 /*FALE CONOSCO INICIO*/
@@ -339,9 +364,16 @@ li {
 
 .card-fc button {
   margin-top: 0.35rem;
+  background-color: #312783;
+  border: none;
 }
+
+.card-fc button:hover {
+  background-color: #4a3cb8;
+}
+
 #form label {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .input-control.error input {
@@ -359,13 +391,13 @@ li {
 .input-control .error {
   color: #ff3860;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 #forms-container h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: 650;
 }
 
 /*FALE CONOSCO FIM*/
@@ -453,7 +485,6 @@ footer {
 #link-maps {
   text-decoration: none;
   color: #f2f2d0;
-  font-family: sans-serif;
   margin-left: auto;
   right: 0%;
   margin-left: auto;
@@ -483,7 +514,6 @@ footer {
   justify-content: center;
   text-decoration: none;
   color: #f2f2d0;
-  font-family: sans-serif;
   font-size: 1rem;
   background-color: #5d617e;
   padding: 0.4rem;

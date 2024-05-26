@@ -108,45 +108,131 @@
         </div>
       </section>
       <section id="hp-section-two" class="homepage-hp-accordion row">
-        <div
-          id="container-hp-acc"
-          class="d-flex flex-column"
-          style="gap: 8px; width: 500px"
-        >
+        <div id="container-hp-acc" class="d-flex flex-column" style="gap: 8px">
           <div class="hp-accordion">
             <button class="hp-accordion-header">
               <span>Objetivos</span>
-              <i class="bi bi-chevron-down"></i>
+              <i class="bi bi-chevron-down arrow"></i>
             </button>
             <div class="hp-accordion-body">
-              <p>txto teste</p>
+              <p>
+                O curso de Bacharelado em Ciência de Dados da Universidade do
+                Estado do Pará (UEPA) - Campus CCNT visa formar profissionais
+                qualificados para atuar na área de coleta, análise,
+                interpretação e visualização de dados, utilizando ferramentas
+                matemáticas, estatísticas e computacionais. O objetivo é que os
+                egressos sejam capazes de extrair conhecimento de grandes
+                conjuntos de dados e utilizá-lo para auxiliar na tomada de
+                decisões em diversos setores da sociedade, como empresas,
+                governos e instituições de pesquisa.
+              </p>
             </div>
           </div>
           <div class="hp-accordion">
             <button class="hp-accordion-header">
-              <span>Objetivos</span>
-              <i class="bi bi-chevron-down"></i>
+              <span>Perfil do Egresso</span>
+              <i class="bi bi-chevron-down arrow"></i>
             </button>
             <div class="hp-accordion-body">
-              <p>txto teste</p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Coletar, armazenar e pré-processar dados de diversas fontes;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Realizar análises estatísticas e de machine learning para
+                identificar padrões e tendências nos dados;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Desenvolver modelos preditivos e de otimização para auxiliar na
+                tomada de decisões;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Comunicar os resultados das análises de forma clara e concisa
+                para diferentes públicos;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Atuar em equipes multidisciplinares para solucionar problemas
+                complexos.
+              </p>
             </div>
           </div>
           <div class="hp-accordion">
             <button class="hp-accordion-header">
-              <span>Objetivos</span>
-              <i class="bi bi-chevron-down"></i>
+              <span>Mercado de Trabalho</span>
+              <i class="bi bi-chevron-down arrow"></i>
             </button>
             <div class="hp-accordion-body">
-              <p>txto teste</p>
+              <p>
+                O mercado de trabalho para profissionais de Ciência de Dados
+                está em franca expansão. De acordo com a Catho, a demanda por
+                cientistas de dados deve crescer 20% até 2024. As oportunidades
+                de atuação são diversas e incluem empresas de tecnologia,
+                instituições financeiras, varejo, indústria, governo,
+                instituições de pesquisa.
+              </p>
             </div>
           </div>
           <div class="hp-accordion">
             <button class="hp-accordion-header">
-              <span>Objetivos</span>
-              <i class="bi bi-chevron-down"></i>
+              <span>Diferenciais do Curso</span>
+              <i class="bi bi-chevron-down arrow"></i>
             </button>
             <div class="hp-accordion-body">
-              <p>txto teste</p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Corpo docente qualificado e experiente;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Laboratórios modernos e equipados;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Ênfase na prática e no desenvolvimento de habilidades;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Projetos de pesquisa aplicados;
+              </p>
+              <p>
+                <i
+                  class="bi bi-caret-right-fill"
+                  style="vertical-align: -0.05em"
+                ></i>
+                Convênios com empresas e instituições para estágios e projetos
+                de extensão.
+              </p>
             </div>
           </div>
         </div>
@@ -231,6 +317,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <script></script>
+    <script>
+      const accordions = document.querySelectorAll(".hp-accordion");
+
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", () => {
+          const body = accordion.querySelector(".hp-accordion-body");
+          body.classList.toggle("active");
+        });
+      });
+      f;
+    </script>
   </body>
 </html>
