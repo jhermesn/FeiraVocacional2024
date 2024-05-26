@@ -2,7 +2,7 @@
 $servername = "localhost";  // Endereço do servidor
 $username = "root";         // Nome de usuário do banco de dados
 $password = "";             // Senha do banco de dados
-$dbname = "uepa_teste";  // Nome do banco de dados
+$dbname = "formulario";  // Nome do banco de dados
 
 // Cria a conexão
 $conexao = new mysqli($servername, $username, $password, $dbname);
@@ -22,7 +22,6 @@ if (isset($_POST['botao_enviar'])) {
     $sql = "INSERT INTO chamados (nome, email, fone, assunto, descricao) VALUES ('$nome', '$email', '$fone', '$assunto', '$descricao')";
 
     if ($conexao->query($sql) === TRUE) {
-        echo "Novo chamado cadastrado com sucesso";
     } else {
         echo "Erro: " . $sql . "<br>" . $conexao->error;
     }

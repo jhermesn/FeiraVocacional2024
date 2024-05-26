@@ -14,7 +14,6 @@ include('cadastro.php');
   <link rel="stylesheet" href="./css/styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -71,17 +70,17 @@ include('cadastro.php');
     <div class="container container-main">
       <div id="forms-container" class="card card-fc">
         <h2 class="text-center mb-2">Fale Conosco</h2>
-        <form class="form-card" method="post" action="cadastro.php" id="form">
+        <form class="form-card" method="post" action="contact-us.php" id="form">
           <div class="row justify-content-between text-left">
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="name" class="form-label px-1">Nome Completo<span class="text-danger"> *</span></label>
-              <input type="text" class="form-control" id="name" name="nome" />
+              <input type="text" class="form-control" id="name" name="nome" required />
               <div class="error px-1"></div>
             </div>
 
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="email" class="form-label px-1">Email<span class="text-danger"> *</span></label>
-              <input type="text" class="form-control" id="email" name="email" />
+              <input type="text" class="form-control" id="email" name="email" required/>
               <div class="error px-1"></div>
             </div>
           </div>
@@ -89,20 +88,20 @@ include('cadastro.php');
           <div class="row justify-content-between text-left">
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="fone" class="form-label px-1">Número de Telefone<span class="text-danger"> *</span></label>
-              <input type="text" class="form-control" id="fone" name="fone" />
+              <input type="text" class="form-control" id="fone" name="fone" required/>
               <div class="error px-1"></div>
             </div>
 
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="subject" class="form-label px-1">Assunto<span class="text-danger"> *</span></label>
-              <select name="assunto" class="form-select" id="subject">
+              <select name="assunto" class="form-select" id="subject" required>
                 <option value="">--</option>
-                <option value="info">Informação</option>
-                <option value="suggestion">Sugestão</option>
-                <option value="compliment">Elogio</option>
-                <option value="complaint">Denúncia</option>
-                <option value="request">Solicitação</option>
-                <option value="request">Outro</option>
+                <option value="Informação">Informação</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Denúncia">Denúncia</option>
+                <option value="Solicitação">Solicitação</option>
+                <option value="Outro">Outro</option>
               </select>
               <div class="error px-1"></div>
             </div>
@@ -111,14 +110,14 @@ include('cadastro.php');
           <div class="row justify-content-between text-left">
             <div class="col-12 flex-column d-flex input-control">
               <label for="message" class="form-label px-1">Descrição: <span class="text-danger"> *</span></label>
-              <textarea class="form-control" id="message" name="descricao"></textarea>
+              <textarea class="form-control" id="message" name="descricao" required></textarea>
               <div class="error px-1"></div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-6">
-            <button name="botao_enviar" valeu="1" type="submit" class=" botao_enviar btn btn-primary">Enviar</button>
+            <button name="botao_enviar" value="1" type="submit" class=" botao_enviar btn btn-primary">Enviar</button>
             </div>
           </div>
         </form>
@@ -168,6 +167,7 @@ include('cadastro.php');
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>

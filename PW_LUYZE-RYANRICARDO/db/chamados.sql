@@ -27,9 +27,6 @@ SET time_zone = "+00:00";
 -- Estrutura para tabela `chamado`
 --
 
-CREATE DATABASE uepa_teste;
-
-USE uepa_teste;
 
 CREATE TABLE `chamados` (
   `idChamado` int(5) NOT NULL,
@@ -45,7 +42,7 @@ CREATE TABLE `chamados` (
 --
 
 INSERT INTO `chamados` (`idChamado`, `nome`, `email`, `fone`, `assunto`, `descricao`) VALUES
-(1, 'Joel', 'joemiran06@gmail.com', 11, 'SUGESTAO', 'fsdvsd');
+(1, 'Joel', 'joemiran@gmail.com', 11, 'SUGESTAO', 'fsdvsd');
 
 --
 -- Índices para tabelas despejadas
@@ -54,7 +51,7 @@ INSERT INTO `chamados` (`idChamado`, `nome`, `email`, `fone`, `assunto`, `descri
 --
 -- Índices de tabela `chamado`
 --
-ALTER TABLE `chamado`
+ALTER TABLE `chamados`
   ADD PRIMARY KEY (`idChamado`);
 
 --
@@ -64,7 +61,7 @@ ALTER TABLE `chamado`
 --
 -- AUTO_INCREMENT de tabela `chamado`
 --
-ALTER TABLE `chamado`
+ALTER TABLE `chamados`
   MODIFY `idChamado` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
