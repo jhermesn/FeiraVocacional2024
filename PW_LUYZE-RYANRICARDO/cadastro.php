@@ -2,7 +2,7 @@
 $servername = "localhost";  // Endereço do servidor
 $username = "root";         // Nome de usuário do banco de dados
 $password = "";             // Senha do banco de dados
-$dbname = "formulario_db";  // Nome do banco de dados
+$dbname = "uepa_teste";  // Nome do banco de dados
 
 // Cria a conexão
 $conexao = new mysqli($servername, $username, $password, $dbname);
@@ -27,5 +27,6 @@ if (isset($_POST['botao_enviar'])) {
         echo "Erro: " . $sql . "<br>" . $conexao->error;
     }
 
-    $conexao->close();
+    $conexao -> close();
 }
+?>

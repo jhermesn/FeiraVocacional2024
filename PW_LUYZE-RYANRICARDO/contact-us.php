@@ -1,5 +1,5 @@
 <?php
-include_once('db/config.php');
+include ('cadastro.php');
 ?>
 
 
@@ -71,7 +71,7 @@ include_once('db/config.php');
     <div class="container container-main">
       <div id="forms-container" class="card card-fc">
         <h2 class="text-center mb-2">Fale Conosco</h2>
-        <form action="contact-us.php" id="form" class="form-card" method="post">
+        <form class="form-card" method="post" action="cadastro.php" id="form">
           <div class="row justify-content-between text-left">
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="name" class="form-label px-1">Nome Completo<span class="text-danger"> *</span></label>
@@ -118,7 +118,7 @@ include_once('db/config.php');
 
           <div class="row">
             <div class="col-sm-6">
-              <button name="botao_enviar" type="submit" class="btn btn-primary">Enviar</button>
+            <button name="botao_enviar" valeu="1" type="submit" class=" botao_enviar btn btn-primary">Enviar</button>
             </div>
           </div>
         </form>
