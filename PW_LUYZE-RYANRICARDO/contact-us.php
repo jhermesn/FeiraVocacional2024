@@ -1,5 +1,5 @@
 <?php
-include ('cadastro.php');
+include('cadastro.php');
 ?>
 
 
