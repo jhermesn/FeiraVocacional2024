@@ -206,7 +206,8 @@
   align-items: center;
   margin-top: 1.1rem;
   margin-left: 3rem;
-  > ul, li {
+  > ul,
+  li {
     padding: 0.3rem;
     list-style-type: disc;
     width: fit-content;
@@ -382,6 +383,12 @@
   font-weight: 500;
 }
 
+#forms-container h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 650;
+}
+
 .input-control.error input {
   border-color: #ff3860;
 }
@@ -398,12 +405,6 @@
   color: #ff3860;
   font-size: 0.85rem;
   font-weight: 400;
-}
-
-#forms-container h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 650;
 }
 
 /*FALE CONOSCO FIM*/
@@ -496,14 +497,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  >p {
+  > p {
     font-size: 0.9rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    >i {
+    > i {
       color: #5d617e;
     }
   }
