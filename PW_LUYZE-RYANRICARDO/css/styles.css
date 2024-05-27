@@ -428,29 +428,17 @@ footer {
   width: 80rem;
   height: 10rem;
   border-top: 0.25rem solid red;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   bottom: 0;
-  gap: 15.5rem;
 }
 
 #footer-img {
-  height: fit-content;
   width: 16rem;
-  margin-left: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 #footer_social_media {
-  display: flex;
-  height: fit-content;
-  align-items: center;
   gap: 2rem;
   margin: auto;
-  margin-left: auto;
-  margin-right: auto;
   color: #f2f2d0;
 }
 
@@ -490,26 +478,12 @@ footer {
   background-color: #4267b3;
 }
 
-.footer-location {
-  height: fit-content;
-  display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 #link-maps {
   text-decoration: none;
   color: #f2f2d0;
-  margin-left: auto;
-  right: 0%;
-  margin-left: auto;
-  margin-right: auto;
 
   > p {
     font-size: 0.9rem;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 
     > i {
