@@ -72,7 +72,7 @@ include('cadastro.php');
     <div class="container container-main">
       <div id="forms-container" class="card card-fc">
         <h2 class="text-center mb-2">Fale Conosco</h2>
-        <form method="post" action="/contact-us.php" id="form" class="form-card was-validated">
+        <form method="post" action="contact-us.php" id="form" class="form-card was-validated">
           <div class="row justify-content-between text-left">
             <div class="col-sm-6 flex-column d-flex input-control">
               <label for="name" class="form-label px-1">Nome Completo<span class="text-danger"> *</span></label>
