@@ -94,11 +94,10 @@ include('cadastro.php');
         <div id="forms-container" class="card card-fc">
           <h2 class="text-center mb-2">Fale Conosco</h2>
           <form
-            class="form-card needs-validation"
             method="post"
-            action="contact-us.php"
+            action="/contact-us.php"
             id="form"
-            novalidate
+            class="form-card was-validated"
           >
             <div class="row justify-content-between text-left">
               <div class="col-sm-6 flex-column d-flex input-control">
@@ -112,7 +111,8 @@ include('cadastro.php');
                   name="nome"
                   required
                 />
-                <div class="invalid-tooltip">Por favor insira um nome.</div>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Preencha este campo.</div>
               </div>
 
               <div class="col-sm-6 flex-column d-flex input-control">
@@ -126,7 +126,10 @@ include('cadastro.php');
                   name="email"
                   required
                 />
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Preencha este campo.</div>
               </div>
+
             </div>
 
             <div class="row justify-content-between text-left">
@@ -141,6 +144,8 @@ include('cadastro.php');
                   name="fone"
                   required
                 />
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Preencha este campo.</div>
               </div>
 
               <div class="col-sm-6 flex-column d-flex input-control">
@@ -161,6 +166,8 @@ include('cadastro.php');
                   <option value="Solicitação">Solicitação</option>
                   <option value="Outro">Outro</option>
                 </select>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Informe o assunto.</div>
               </div>
             </div>
 
@@ -175,6 +182,8 @@ include('cadastro.php');
                   name="descricao"
                   required
                 ></textarea>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Preencha este campo.</div>
               </div>
             </div>
 
