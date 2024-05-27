@@ -1,337 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Início</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
 
-  <body>
-    <!--header-->
-    <header>
-      <div class="container-header">
-        <div class="container">
-          <div class="row d-flex header-top">
-            <div class="col-lg-8 d-flex">
-              <a href="./index.html">
-                <img
-                  src="./img/logocdados.png"
-                  alt="Logo do curso de ciência de dados."
-              /></a>
-            </div>
-            <!--logo-->
-            <div class="col-lg-4 d-flex d-none d-lg-block">
-              <h1>
-                <img src="img/logo_uepa2023.png" />
-              </h1>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Início</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div class="container-header">
+      <div class="container">
+        <div class="row d-flex header-top">
+          <div class="col-lg-8 d-flex">
+            <a href="./index.html">
+              <img src="./img/logocdados.png" alt="Logo do curso de ciência de dados." /></a>
           </div>
-        </div>
-
-        <!--menu navegacao de paginas-->
-        <div id="menu-pages">
-          <nav>
-            <ul>
-              <li>
-                <a href="./structure-course.html"
-                  >ESTRUTURA DO CURSO <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./evaluation-system.html"
-                  >SISTEMA DE AVALIAÇÃO <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./professors.html"
-                  >CORPO DOCENTE <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./campus.html"
-                  >CAMPUS <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./committee.html"
-                  >COLEGIADO <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./nde.html"
-                  >NÚCLEO DOCENTE ESTRUTURANTE <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./contact-us.php"
-                  >FALE CONOSCO <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./adm.php"
-                  >ADMINISTRADOR <i class="bi bi-chevron-down"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
+          <!--logo-->
+          <div class="col-lg-4 d-flex d-none d-lg-block">
+            <h1>
+              <img src="img/logo_uepa2023.png" />
+            </h1>
+          </div>
         </div>
       </div>
-    </header>
-    <!--fim header-->
 
-    <!--inicio main-->
-    <main class="container container-homepage">
-      <section id="hp-section-one" class="row align-items-center">
-        <div class="d-flex col-lg-6 flex-column">
-          <div id="hp-first-text">
-            <h4>Bacharelado em Ciência de Dados</h4>
-            <h5>Universidade do Estado do Pará</h5>
-          </div>
-          <div id="hp-first-btn">
-            <button class="btn btn-primary">
-              <a href="#hp-section-two">Conheça o curso!</a>
-            </button>
-          </div>
-        </div>
-        <div class="d-flex col-lg-6 flex-column d-none d-lg-flex">
-          <img
-            src="img/Data-Ecosystem-Integration.svg"
-            alt="Imagem gráfica de data science"
-          />
-        </div>
-      </section>
-      <section id="hp-section-two" class="homepage-hp-accordion row">
-        <div id="container-hp-acc" class="d-flex flex-column" style="gap: 8px">
-          <div class="hp-accordion">
-            <button class="hp-accordion-header">
-              <span>Objetivos</span>
-              <i class="bi bi-chevron-down arrow"></i>
-            </button>
-            <div class="hp-accordion-body">
-              <p>
-                O curso de Bacharelado em Ciência de Dados da Universidade do
-                Estado do Pará (UEPA) - Campus CCNT visa formar profissionais
-                qualificados para atuar na área de coleta, análise,
-                interpretação e visualização de dados, utilizando ferramentas
-                matemáticas, estatísticas e computacionais. O objetivo é que os
-                egressos sejam capazes de extrair conhecimento de grandes
-                conjuntos de dados e utilizá-lo para auxiliar na tomada de
-                decisões em diversos setores da sociedade, como empresas,
-                governos e instituições de pesquisa.
-              </p>
-            </div>
-          </div>
-          <div class="hp-accordion">
-            <button class="hp-accordion-header">
-              <span>Perfil do Egresso</span>
-              <i class="bi bi-chevron-down arrow"></i>
-            </button>
-            <div class="hp-accordion-body">
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Coletar, armazenar e pré-processar dados de diversas fontes;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Realizar análises estatísticas e de machine learning para
-                identificar padrões e tendências nos dados;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Desenvolver modelos preditivos e de otimização para auxiliar na
-                tomada de decisões;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Comunicar os resultados das análises de forma clara e concisa
-                para diferentes públicos;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Atuar em equipes multidisciplinares para solucionar problemas
-                complexos.
-              </p>
-            </div>
-          </div>
-          <div class="hp-accordion">
-            <button class="hp-accordion-header">
-              <span>Mercado de Trabalho</span>
-              <i class="bi bi-chevron-down arrow"></i>
-            </button>
-            <div class="hp-accordion-body">
-              <p>
-                O mercado de trabalho para profissionais de Ciência de Dados
-                está em franca expansão. De acordo com a Catho, a demanda por
-                cientistas de dados deve crescer 20% até 2024. As oportunidades
-                de atuação são diversas e incluem empresas de tecnologia,
-                instituições financeiras, varejo, indústria, governo,
-                instituições de pesquisa.
-              </p>
-            </div>
-          </div>
-          <div class="hp-accordion">
-            <button class="hp-accordion-header">
-              <span>Diferenciais do Curso</span>
-              <i class="bi bi-chevron-down arrow"></i>
-            </button>
-            <div class="hp-accordion-body">
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Corpo docente qualificado e experiente;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Laboratórios modernos e equipados;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Ênfase na prática e no desenvolvimento de habilidades;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Projetos de pesquisa aplicados;
-              </p>
-              <p>
-                <i
-                  class="bi bi-caret-right-fill"
-                  style="vertical-align: -0.05em"
-                ></i>
-                Convênios com empresas e instituições para estágios e projetos
-                de extensão.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      <!--menu navegacao de paginas-->
+      <div id="menu-pages">
+        <nav>
+          <ul>
+            <li>
+              <a href="./structure-course.html">ESTRUTURA DO CURSO <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./evaluation-system.html">SISTEMA DE AVALIAÇÃO <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./professors.html">CORPO DOCENTE <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./campus.html">CAMPUS <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./committee.html">COLEGIADO <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./nde.html">NÚCLEO DOCENTE ESTRUTURANTE <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./contact-us.php">FALE CONOSCO <i class="bi bi-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="./adm.php">ADMINISTRADOR <i class="bi bi-chevron-down"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--fim header-->
 
-    <!--fim main-->
-
-    <!--inicio footer-->
-    <footer>
-      <!--logo gov.pa-->
-      <div class="container-footer d-flex">
-        <div id="footer-img">
-          <img src="./img/logo-uepa-branco.png" alt="Logo da UEPA." />
+  <!--inicio main-->
+  <main class="container container-homepage">
+    <section id="hp-section-one" class="row align-items-center">
+      <div class="d-flex col-lg-6 flex-column">
+        <div id="hp-first-text">
+          <h4>Bacharelado em Ciência de Dados</h4>
+          <h5>Universidade do Estado do Pará</h5>
         </div>
-
-        <!--redes sociais-->
-        <div id="footer_social_media">
-          <a
-            href="https://www.youtube.com/channel/UCiW52AgF7Y62gvDw500haAw"
-            class="footer-link"
-            id="youtube"
-          >
-            <i class="bi bi-youtube"></i>
-          </a>
-          <a
-            href="https://twitter.com/uepaoficial"
-            class="footer-link"
-            id="twitter"
-          >
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/uepaoficial"
-            class="footer-link"
-            id="instagram"
-          >
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a
-            href="https://www.facebook.com/UepaOficial"
-            class="footer-link"
-            id="facebook"
-          >
-            <i class="bi bi-facebook"></i>
-          </a>
+        <div id="hp-first-btn">
+          <button class="btn btn-primary">
+            <a href="#hp-section-two">Conheça o curso!</a>
+          </button>
         </div>
-
-        <!--localização-->
-        <div class="footer-location">
-          <a href="https://maps.app.goo.gl/EFeFgLZavTC1Yfs8A" id="link-maps">
+      </div>
+      <div class="d-flex col-lg-6 flex-column d-none d-lg-flex">
+        <img src="img/Data-Ecosystem-Integration.svg" alt="Imagem gráfica de data science" />
+      </div>
+    </section>
+    <section id="hp-section-two" class="homepage-hp-accordion row">
+      <div id="container-hp-acc" class="d-flex flex-column" style="gap: 8px">
+        <div class="hp-accordion">
+          <button class="hp-accordion-header">
+            <span>Objetivos</span>
+            <i class="bi bi-chevron-down arrow"></i>
+          </button>
+          <div class="hp-accordion-body">
             <p>
-              Universidade do Estado do Pará - CCNT <br />
-              <i class="bi bi-geo-alt-fill">
-                <small
-                  >Tv. Dr. Enéas Pinheiro, 2626 - Marco, Belém - PA,
-                  66095-015</small
-                >
-              </i>
+              O curso de Bacharelado em Ciência de Dados da Universidade do
+              Estado do Pará (UEPA) - Campus CCNT visa formar profissionais
+              qualificados para atuar na área de coleta, análise,
+              interpretação e visualização de dados, utilizando ferramentas
+              matemáticas, estatísticas e computacionais. O objetivo é que os
+              egressos sejam capazes de extrair conhecimento de grandes
+              conjuntos de dados e utilizá-lo para auxiliar na tomada de
+              decisões em diversos setores da sociedade, como empresas,
+              governos e instituições de pesquisa.
             </p>
-          </a>
+          </div>
+        </div>
+        <div class="hp-accordion">
+          <button class="hp-accordion-header">
+            <span>Perfil do Egresso</span>
+            <i class="bi bi-chevron-down arrow"></i>
+          </button>
+          <div class="hp-accordion-body">
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Coletar, armazenar e pré-processar dados de diversas fontes;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Realizar análises estatísticas e de machine learning para
+              identificar padrões e tendências nos dados;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Desenvolver modelos preditivos e de otimização para auxiliar na
+              tomada de decisões;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Comunicar os resultados das análises de forma clara e concisa
+              para diferentes públicos;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Atuar em equipes multidisciplinares para solucionar problemas
+              complexos.
+            </p>
+          </div>
+        </div>
+        <div class="hp-accordion">
+          <button class="hp-accordion-header">
+            <span>Mercado de Trabalho</span>
+            <i class="bi bi-chevron-down arrow"></i>
+          </button>
+          <div class="hp-accordion-body">
+            <p>
+              O mercado de trabalho para profissionais de Ciência de Dados
+              está em franca expansão. De acordo com a Catho, a demanda por
+              cientistas de dados deve crescer 20% até 2024. As oportunidades
+              de atuação são diversas e incluem empresas de tecnologia,
+              instituições financeiras, varejo, indústria, governo,
+              instituições de pesquisa.
+            </p>
+          </div>
+        </div>
+        <div class="hp-accordion">
+          <button class="hp-accordion-header">
+            <span>Diferenciais do Curso</span>
+            <i class="bi bi-chevron-down arrow"></i>
+          </button>
+          <div class="hp-accordion-body">
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Corpo docente qualificado e experiente;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Laboratórios modernos e equipados;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Ênfase na prática e no desenvolvimento de habilidades;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Projetos de pesquisa aplicados;
+            </p>
+            <p>
+              <i class="bi bi-caret-right-fill" style="vertical-align: -0.05em"></i>
+              Convênios com empresas e instituições para estágios e projetos
+              de extensão.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!--créditos-->
-      <div class="authors">
-        <a
-          href="https://github.com/theunrealryan/PW_LUYZE-RYANRICARDO"
-          id="github"
-        >
-          <i class="bi bi-github">
-            Authors: Luyze Beatriz Marques Caetano e Ryan Ricardo de Souza</i
-          >
+  <!--fim main-->
+
+  <!--inicio footer-->
+  <footer>
+    <!--logo gov.pa-->
+    <div class="container-footer d-flex">
+      <div id="footer-img">
+        <img src="./img/logo-uepa-branco.png" alt="Logo da UEPA." />
+      </div>
+
+      <!--redes sociais-->
+      <div id="footer_social_media">
+        <a href="https://www.youtube.com/channel/UCiW52AgF7Y62gvDw500haAw" class="footer-link" id="youtube">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://twitter.com/uepaoficial" class="footer-link" id="twitter">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/uepaoficial" class="footer-link" id="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/UepaOficial" class="footer-link" id="facebook">
+          <i class="bi bi-facebook"></i>
         </a>
       </div>
-    </footer>
-    <!--fim footer-->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      <!--localização-->
+      <div class="footer-location">
+        <a href="https://maps.app.goo.gl/FAY25EhQFKXkoJvH9" id="link-maps">
+          <p>
+            Universidade do Estado do Pará - Campus XXII Ananindeua <br />
+            <i class="bi bi-geo-alt-fill">
+              <small>Avenida Independência, S/N, ao lado da Usina da Paz Icuí-Guajará</small>
+            </i>
+          </p>
+        </a>
+      </div>
+    </div>
 
-    <script>
-      const accordions = document.querySelectorAll(".hp-accordion");
+    <!--créditos-->
+    <div class="authors">
+      <a href="https://github.com/theunrealryan/PW_LUYZE-RYANRICARDO" id="github">
+        <i class="bi bi-github">
+          Authors: Luyze Beatriz Marques Caetano e Ryan Ricardo de Souza</i>
+      </a>
+    </div>
+  </footer>
+  <!--fim footer-->
 
-      accordions.forEach((accordion) => {
-        accordion.addEventListener("click", () => {
-          const body = accordion.querySelector(".hp-accordion-body");
-          body.classList.toggle("active");
-        });
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const accordions = document.querySelectorAll(".hp-accordion");
+
+    accordions.forEach((accordion) => {
+      accordion.addEventListener("click", () => {
+        const body = accordion.querySelector(".hp-accordion-body");
+        body.classList.toggle("active");
       });
-      f;
-    </script>
-  </body>
+    });
+    f;
+  </script>
+</body>
+
 </html>

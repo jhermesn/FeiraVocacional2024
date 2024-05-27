@@ -94,9 +94,7 @@ $result = $banco->select($sql);
               <a href="./contact-us.php">FALE CONOSCO <i class="bi bi-chevron-down"></i></a>
             </li>
             <li>
-                <a href="./adm.php"
-                  >ADMINISTRADOR <i class="bi bi-chevron-down"></i
-                ></a>
+              <a href="./adm.php">ADMINISTRADOR <i class="bi bi-chevron-down"></i></a>
             </li>
           </ul>
         </nav>
@@ -108,12 +106,12 @@ $result = $banco->select($sql);
   <main>
     <div class="container-main container d-flex flex-column align-items-center">
 
-    <div id="ouvidoria" class="d-flex flex-column align-items-center">
-      <h2>Bacharelado em Ciência de Dados</h2>
-      <h3>Página Administrativa - Consulta Chamados</h3>
-    </div>
-    
-      
+      <div id="ouvidoria" class="d-flex flex-column align-items-center">
+        <h2>Bacharelado em Ciência de Dados</h2>
+        <h3>Página Administrativa - Consulta Chamados</h3>
+      </div>
+
+
       <div class="container my-4">
 
         <div class="row my-2">
@@ -197,12 +195,11 @@ $result = $banco->select($sql);
       </div>
 
       <div class="footer-location">
-        <a href="https://maps.app.goo.gl/EFeFgLZavTC1Yfs8A" id="link-maps">
+        <a href="https://maps.app.goo.gl/FAY25EhQFKXkoJvH9" id="link-maps">
           <p>
-            Universidade do Estado do Pará - CCNT <br />
+            Universidade do Estado do Pará - Campus XXII Ananindeua <br />
             <i class="bi bi-geo-alt-fill">
-              <small>Tv. Dr. Enéas Pinheiro, 2626 - Marco, Belém - PA,
-                66095-015</small>
+              <small>Avenida Independência, S/N, ao lado da Usina da Paz Icuí-Guajará</small>
             </i>
           </p>
         </a>
