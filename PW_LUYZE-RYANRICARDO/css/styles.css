@@ -206,7 +206,8 @@
   align-items: center;
   margin-top: 1.1rem;
   margin-left: 3rem;
-  > ul,
+
+  >ul,
   li {
     padding: 0.3rem;
     list-style-type: disc;
@@ -409,6 +410,19 @@
 
 /*FALE CONOSCO FIM*/
 
+/*INICIO CONSULTA CHAMADOS*/
+
+#ouvidoria {
+  margin-top: 1.5rem;
+
+  >h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*FIM CONSULTA CHAMADOS*/
+
 /*footer inicio*/
 footer {
   background-color: #312783;
@@ -497,14 +511,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  > p {
+  >p {
     font-size: 0.9rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    > i {
+    >i {
       color: #5d617e;
     }
   }
