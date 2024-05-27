@@ -83,6 +83,11 @@ include('cadastro.php');
                   >FALE CONOSCO <i class="bi bi-chevron-down"></i
                 ></a>
               </li>
+              <li>
+                <a href="./adm.php"
+                  >ADMINISTRADOR <i class="bi bi-chevron-down"></i
+                ></a>
+            </li>
             </ul>
           </nav>
         </div>

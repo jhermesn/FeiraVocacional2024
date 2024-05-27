@@ -93,6 +93,11 @@ $result = $banco->select($sql);
             <li>
               <a href="./contact-us.php">FALE CONOSCO <i class="bi bi-chevron-down"></i></a>
             </li>
+            <li>
+                <a href="./adm.php"
+                  >ADMINISTRADOR <i class="bi bi-chevron-down"></i
+                ></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -103,14 +108,12 @@ $result = $banco->select($sql);
   <main>
     <div class="container-main container d-flex flex-column align-items-center">
 
-      <div id="ouvidoria">
-        <h2>Bacharelado em Ciência de Dados</h2>
-        <br>
-        <div>
-          <h3>Página Administrativa - Consulta Chamados</h3>
-        </div>
-      </div>
-
+    <div id="ouvidoria" class="d-flex flex-column align-items-center">
+      <h2>Bacharelado em Ciência de Dados</h2>
+      <h3>Página Administrativa - Consulta Chamados</h3>
+    </div>
+    
+      
       <div class="container my-4">
 
         <div class="row my-2">
@@ -163,7 +166,7 @@ $result = $banco->select($sql);
         }
         ?>
 
-        <a class="btn btn-primary my-4 botao" role="button" href="contact-us.php">
+        <a class="btn btn-primary my-4 botao" style="background-color: #312783; border: none;" role="button" href="contact-us.php">
           Fale Conosco
         </a>
 
