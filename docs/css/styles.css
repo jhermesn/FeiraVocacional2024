@@ -1,27 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-/* Variáveis CSS */
-:root {
-  --color-neutral-40: #6c757d; /* Cor Cinza */
-}
-
-/* Reset e Estilos Globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  margin: 12rem 0; /* Espaço entre o body e o header/footer */
+  font-family: "Poppins";
 }
 
 /* Cabeçalho Superior */
 .header-top {
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .header-top img {
@@ -30,38 +15,27 @@ body {
 }
 
 .header-top h1 img {
-  margin: 0.5rem 0.5rem 0 0;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   float: right;
   width: 27rem;
-}
-
-/*
-Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
-*/
-.header-top .col-lg-8::after {
-  content: "ENGENHARIA DE SOFTWARE";
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #312783;
-  margin-top: 0.5rem;
-  font-family: Poppins sans-serif;
-  margin-left: 1rem;
-  white-space: pre;
 }
 
 /* Menu de Páginas */
 #menu-pages {
   background-color: #312783;
   text-align: center;
+  align-items: center;
   padding: 0.5rem;
 }
 
 #menu-pages ul {
-  display: inline-flex;
-  list-style: none;
+  display: inline;
 }
 
 #menu-pages li {
+  display: inline;
+  flex-shrink: 0;
   margin-right: 1rem;
 }
 
@@ -78,23 +52,24 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 
 /* Conteúdo Principal */
 .container-main h2 {
-  margin: 0.5rem 1rem 0;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
   color: #312783;
   font-size: 1.8rem;
   font-weight: 550;
 }
 
 .container-main h3 {
-  margin: 0 1rem;
-  font-size: 1.1rem;
   font-weight: 400;
+  margin: 1rem 8rem;
+  font-size: 1.1rem;
   text-indent: 1rem;
   text-align: justify;
 }
 
 /* Página Inicial */
 #hp-section-one {
-  margin: 3rem 0 5rem;
+  margin: 3rem 0 5rem 0;
 }
 
 #hp-first-text h4 {
@@ -110,56 +85,55 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
   color: #c4302b;
 }
 
-#hp-first-btn button,
-.card-prof-slide button,
-.card-fc button {
-  margin-top: 0.35rem;
+#hp-first-btn button {
+  margin-top: 0.75rem;
+  border-color: #312783;
   background-color: #312783;
-  border: none;
   border-radius: 1rem;
 }
 
-#hp-first-btn a,
-.card-prof-slide button a,
-.card-fc button a {
+#hp-first-btn a {
   text-decoration: none;
   color: #fff;
 }
 
-#hp-first-btn button:hover,
-.card-prof-slide button:hover,
-.card-fc button:hover {
+#hp-first-btn button:hover {
   opacity: 0.9;
 }
 
 #hp-section-two {
-  margin: 13rem 0 3rem;
+  margin: 13rem 0 3rem 0;
 }
 
 #container-hp-acc {
   width: fit-content;
 }
 
-/* Acordeões */
-.hp-accordion {
+#container-hp-acc .hp-accordion {
   background-color: rgb(240, 240, 240);
   border-radius: 8px;
   padding: 12px;
   cursor: pointer;
   box-shadow: 5px 5px 5px rgba(114, 114, 114, 0.2);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem !important;
 }
 
+#container-hp-acc .hp-accordion,
 .hp-accordion-header,
 .hp-accordion-body {
-  width: 100%;
-  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .hp-accordion-header {
+  width: 100%;
   text-align: left;
   padding: 1rem;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240); /* Cor cinza igual ao background do container */
+  border: none;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -170,7 +144,7 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 
 .hp-accordion-header:hover,
 .hp-accordion-header:active {
-  background-color: #f8f9fa;
+  background-color: rgb(240, 240, 240); /* Manter a cor cinza no hover e active */
 }
 
 .hp-accordion-body {
@@ -182,7 +156,7 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 }
 
 .hp-accordion-body.active {
-  max-height: 500px;
+  max-height: 500px; /* Suficiente para acomodar o conteúdo */
   opacity: 1;
   padding: 1rem;
 }
@@ -204,7 +178,7 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 #grade-curricular {
   display: flex;
   justify-content: center;
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 1.5rem 0;
 }
 
 /* Sistema de Avaliação */
@@ -228,16 +202,26 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 }
 
 .card-prof-slide {
-  margin: 1rem 0 2.5rem;
+  margin: 1rem 0 2.5rem 0;
   padding: 1rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 .card-prof-slide button {
-  background-color: #312783;
+  margin-top: 0.35rem;
+  background: #312783;
+  border: none;
+}
+
+.card-prof-slide button:hover {
+  background: #322783;
+  opacity: 0.9;
 }
 
 .card-prof-slide button a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -267,22 +251,26 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 }
 
 .container-campus h2 {
+  margin-left: 0;
   color: #312783;
   font-size: 1.8rem;
   font-weight: 550;
 }
 
-.container-campus h3,
-.container-campus p {
+.container-campus h3 {
+  font-weight: 400;
   margin: 0 1rem;
   font-size: 1.1rem;
-  font-weight: 400;
   text-indent: 1rem;
+  margin-top: 0.25rem;
   text-align: justify;
 }
 
 .container-campus p {
-  margin-bottom: 0.15rem;
+  font-weight: 400;
+  margin: 0 1rem 0.15rem 0;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 #desc-campus-column {
@@ -290,13 +278,20 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
   margin-bottom: 1rem;
 }
 
-/* Colegiado e NDE */
-.cmt-cont,
+/* Colegiado */
+.cmt-cont {
+  margin-bottom: 2rem !important;
+}
+
+.cmt-wrapper {
+  margin-bottom: 1rem;
+}
+
+/* NDE */
 .cont-nde {
   margin-bottom: 2rem;
 }
 
-.cmt-wrapper,
 .nde-wrapper {
   margin-bottom: 1rem;
 }
@@ -305,7 +300,8 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 .card-fc {
   margin: 2rem 0;
   padding: 2rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-fc label {
@@ -313,7 +309,9 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 }
 
 .card-fc button {
+  margin-top: 0.35rem;
   background-color: #312783;
+  border: none;
 }
 
 .card-fc button:hover {
@@ -325,8 +323,8 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 }
 
 #forms-container h2 {
-  font-weight: 650;
   margin: 0;
+  font-weight: 650;
 }
 
 .input-control.error input,
@@ -343,23 +341,22 @@ Botar a fonte do ENGENHARIA DE SOFTWARE a mesma do hp-first-text.h4
 
 /* Consulta de Chamados */
 #ouvidoria {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 /* Rodapé */
 footer {
   background-color: #312783;
-  width: 100%;
-  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 .container-footer {
   width: 80rem;
   height: 10rem;
   border-top: 0.25rem solid red;
-  margin: 0 auto;
   position: relative;
+  bottom: 0;
 }
 
 #footer-img {
@@ -367,21 +364,19 @@ footer {
 }
 
 #footer_social_media {
-  display: flex;
-  justify-content: center;
   gap: 2rem;
   margin: auto;
   color: #f2f2d0;
 }
 
-.footer-link {
+#footer_social_media .footer-link {
   color: #fff;
   border-radius: 50%;
-  transition: opacity 0.4s;
+  transition: all 0.4s;
   text-decoration: none;
 }
 
-.footer-link i {
+#footer_social_media .footer-link i {
   font-size: 1.3rem;
   height: 2.5rem;
   width: 2.5rem;
@@ -390,7 +385,7 @@ footer {
   justify-content: center;
 }
 
-.footer-link:hover {
+#footer_social_media .footer-link:hover {
   opacity: 0.8;
 }
 
@@ -438,4 +433,41 @@ footer {
   font-size: 1rem;
   background-color: #5d617e;
   padding: 0.4rem;
+}
+
+/* Variáveis CSS */
+:root {
+  --color-neutral-40: #6c757d; /* Cor Cinza */
+}
+
+body {
+  margin-top: 64rem;
+  margin-bottom: 64rem;
+}
+
+.hp-accordion {
+  margin: 1rem 0;
+}
+
+.hp-accordion-header:hover {
+  background-color: #f8f9fa;
+}
+
+.hp-accordion-header:active {
+  background-color: #f8f9fa;
+}
+
+.header-top .col-lg-8 {
+  display: flex;
+  align-items: center;
+}
+
+.header-top .col-lg-8::after {
+  content: "ENGENHARIA\A DE\A SOFTWARE";
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: #312783;
+  font-weight: 600;
+  white-space: pre;
 }
