@@ -504,3 +504,9 @@ footer {
 }
 
 /*footer fim*/
+
+/* Definição das Variáveis CSS */
+:root {
+  --color-neutral-40: #6c757d; /* Cor Cinza */
+  /* Adicione outras variáveis conforme necessário */
+}
