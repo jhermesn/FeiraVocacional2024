@@ -1,3 +1,4 @@
+// Inicialização do Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -21,4 +22,28 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 40,
     },
   },
+});
+
+// Função para Manipular Accordions
+document.addEventListener("DOMContentLoaded", function () {
+  const accordions = document.querySelectorAll(".hp-accordion-header");
+
+  accordions.forEach((header) => {
+    header.addEventListener("click", function () {
+      const body = this.nextElementSibling;
+
+      // Verifica se o accordion já está ativo
+      const isActive = body.classList.contains("active");
+
+      // Fecha todos os accordions
+      document.querySelectorAll(".hp-accordion-body").forEach((b) => {
+        b.classList.remove("active");
+      });
+
+      // Se não estava ativo, abre o selecionado
+      if (!isActive) {
+        body.classList.add("active");
+      }
+    });
+  });
 });
