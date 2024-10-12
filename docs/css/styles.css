@@ -441,8 +441,8 @@ footer {
 }
 
 body {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 
 .hp-accordion {
@@ -463,9 +463,10 @@ body {
 }
 
 .header-top .col-lg-8::after {
-  content: "Engenharia de Software";
+  content: "ENGENHARIA\A DE\A SOFTWARE";
   margin-left: 1rem;
   font-size: 1.2rem;
   color: #312783;
   font-weight: 600;
+  white-space: pre;
 }
