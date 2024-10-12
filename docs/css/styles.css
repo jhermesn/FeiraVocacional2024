@@ -471,7 +471,7 @@ body {
 .header-top .col-lg-8::after {
   content: "ENGENHARIA\A DE\A SOFTWARE";
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 3rem;
   font-family: "Poppins", sans-serif;
   color: #312783;
   font-weight: bolder;
