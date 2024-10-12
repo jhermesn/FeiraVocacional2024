@@ -438,7 +438,7 @@ footer {
 }
 
 #footer_social_media .footer-link {
-  color: var(--color-neutral-40);
+  color: #fff; /* Alterado para branco */
   border-radius: 50%;
   transition: all 0.4s;
   text-decoration: none;
