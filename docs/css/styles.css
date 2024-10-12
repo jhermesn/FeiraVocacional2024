@@ -462,7 +462,7 @@ body {
 }
 
 .header-top .col-lg-8::after {
-  content: " - Bacharelado em Engenharia de Software";
+  content: "Engenharia de Software";
   margin-left: 1rem;
   font-size: 1.2rem;
   color: #312783;
