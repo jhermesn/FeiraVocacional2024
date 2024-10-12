@@ -1,3 +1,2 @@
-Projeto desenvolvido como av2 da disciplina de Programação Web no segundo período (2024.1) de Engenharia de Software na Universidade do Estado do Pará utilizando as tecnologias HTML, CSS, Javascript e PHP.
-
-Apresentação do curso fictício de Ciência de Dados na UEPA.
+### Apresentação do Curso de Bacharelado em Engenharia de Software da UEPA
+- Forked and adapted from my friends and seniors Ryan and Luyze's project: Website para apresentação do curso fictício de Ciência de Dados na UEPA. All credits goes to them.
