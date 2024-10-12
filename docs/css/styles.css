@@ -131,7 +131,7 @@
   width: 100%;
   text-align: left;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: rgb(240, 240, 240); /* Cor cinza igual ao background do container */
   border: none;
   outline: none;
   cursor: pointer;
@@ -142,8 +142,9 @@
   font-weight: 600;
 }
 
-.hp-accordion-header:hover {
-  background-color: #f8f9fa;
+.hp-accordion-header:hover,
+.hp-accordion-header:active {
+  background-color: rgb(240, 240, 240); /* Manter a cor cinza no hover e active */
 }
 
 .hp-accordion-body {
